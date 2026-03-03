@@ -12,7 +12,7 @@ cultureInfo en-US
 					caption: Avg. Response Time (cases)
 				measure Target
 					caption: Target
-				measure '% Response Within 2 Working Days'
+				measure '% Response W.I 22 Working Days'
 					caption: % Response Within 2 Working Days
 			table Date
 				column Month

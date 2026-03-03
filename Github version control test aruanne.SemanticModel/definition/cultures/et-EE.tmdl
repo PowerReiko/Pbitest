@@ -12,7 +12,7 @@ cultureInfo et-EE
 					caption: Keskmine reageerimise aeg (pöördumised)
 				measure Target
 					caption: Eesmärk
-				measure '% Response Within 2 Working Days'
+				measure '% Response W.I 22 Working Days'
 					caption: 2 tööpäeva jooksul esmareageerimiste %
 			table Date
 				column Month

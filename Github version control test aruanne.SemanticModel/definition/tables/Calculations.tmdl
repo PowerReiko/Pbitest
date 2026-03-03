@@ -213,7 +213,7 @@ table Calculations
 		displayFolder: #Other
 		lineageTag: 8399e931-e6f0-4528-ba30-ce0a626afda9
 
-	measure '% Response Within 2 Working Days' =
+	measure '% Response W.I 22 Working Days' =
 			
 			VAR TotalResponses =
 			    COUNTROWS ( '# incident' )

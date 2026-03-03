@@ -60,11 +60,11 @@
                       "Entity": "Calculations"
                     }
                   },
-                  "Property": "% Response Within 2 Working Days"
+                  "Property": "% Response W.I 22 Working Days"
                 }
               },
               "queryRef": "#Measures.% Response Within 2 Working Days",
-              "nativeQueryRef": "% Response Within 2 Working Days"
+              "nativeQueryRef": "% Response W.I 22 Working Days"
             },
             {
               "field": {
