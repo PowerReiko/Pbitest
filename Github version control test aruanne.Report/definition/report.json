@@ -134,17 +134,6 @@
           "type": "Image"
         }
       ]
-    },
-    {
-      "name": "newTimelineEBCA53AA6EAF429AA18CF5E2F4E6E3AD",
-      "type": "CustomVisual",
-      "items": [
-        {
-          "name": "newTimelineEBCA53AA6EAF429AA18CF5E2F4E6E3AD.pbiviz.json",
-          "path": "newTimelineEBCA53AA6EAF429AA18CF5E2F4E6E3AD.pbiviz.json",
-          "type": "CustomVisualMetadata"
-        }
-      ]
     }
   ],
   "settings": {

@@ -126,96 +126,9 @@
               },
               "queryRef": "incident.Owner",
               "nativeQueryRef": "Owner"
-            },
-            {
-              "field": {
-                "Column": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "# incident"
-                    }
-                  },
-                  "Property": "Created On"
-                }
-              },
-              "queryRef": "incident.Created On",
-              "nativeQueryRef": "Created On1"
-            },
-            {
-              "field": {
-                "Column": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "# incident"
-                    }
-                  },
-                  "Property": "First Response"
-                }
-              },
-              "queryRef": "incident.First Response",
-              "nativeQueryRef": "First Response"
-            },
-            {
-              "field": {
-                "Measure": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "Calculations"
-                    }
-                  },
-                  "Property": "Label_Days/Hours"
-                }
-              },
-              "queryRef": "#Measures.Label_Days/Hours",
-              "nativeQueryRef": "Label_Days/Hours"
-            },
-            {
-              "field": {
-                "Column": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "# incident"
-                    }
-                  },
-                  "Property": "statuscodename"
-                }
-              },
-              "queryRef": "incident.statuscodename",
-              "nativeQueryRef": "First statuscodename"
-            },
-            {
-              "field": {
-                "Column": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "# incident"
-                    }
-                  },
-                  "Property": "Sub Status"
-                }
-              },
-              "queryRef": "incident.Sub Status",
-              "nativeQueryRef": "Sub Status"
             }
           ]
         }
-      },
-      "sortDefinition": {
-        "sort": [
-          {
-            "field": {
-              "Column": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "# incident"
-                  }
-                },
-                "Property": "Created On"
-              }
-            },
-            "direction": "Descending"
-          }
-        ]
       }
     },
     "objects": {
@@ -301,34 +214,6 @@
           },
           "selector": {
             "metadata": "incident.Case Title"
-          }
-        },
-        {
-          "properties": {
-            "value": {
-              "expr": {
-                "Literal": {
-                  "Value": "110D"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "incident.Created On"
-          }
-        },
-        {
-          "properties": {
-            "value": {
-              "expr": {
-                "Literal": {
-                  "Value": "110D"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "incident.statuscodename"
           }
         },
         {
@@ -1303,34 +1188,6 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "179D"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "incident.Sub Status"
-          }
-        },
-        {
-          "properties": {
-            "value": {
-              "expr": {
-                "Literal": {
-                  "Value": "119D"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "#Measures.Label_Days/Hours"
-          }
-        },
-        {
-          "properties": {
-            "value": {
-              "expr": {
-                "Literal": {
                   "Value": "136D"
                 }
               }
@@ -1338,20 +1195,6 @@
           },
           "selector": {
             "metadata": "account.Owner"
-          }
-        },
-        {
-          "properties": {
-            "value": {
-              "expr": {
-                "Literal": {
-                  "Value": "141.4138765482271D"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "incident.First Response"
           }
         },
         {
@@ -1471,126 +1314,6 @@
               }
             ],
             "metadata": "Min(incident.statuscodename)"
-          }
-        },
-        {
-          "properties": {
-            "icon": {
-              "kind": "Icon",
-              "layout": {
-                "expr": {
-                  "Literal": {
-                    "Value": "'After'"
-                  }
-                }
-              },
-              "verticalAlignment": {
-                "expr": {
-                  "Literal": {
-                    "Value": "'Top'"
-                  }
-                }
-              },
-              "value": {
-                "expr": {
-                  "Conditional": {
-                    "Cases": [
-                      {
-                        "Condition": {
-                          "Comparison": {
-                            "ComparisonKind": 0,
-                            "Left": {
-                              "Measure": {
-                                "Expression": {
-                                  "SourceRef": {
-                                    "Entity": "Calculations"
-                                  }
-                                },
-                                "Property": "Icon_Condition"
-                              }
-                            },
-                            "Right": {
-                              "Literal": {
-                                "Value": "3D"
-                              }
-                            }
-                          }
-                        },
-                        "Value": {
-                          "Literal": {
-                            "Value": "'SymbolLow'"
-                          }
-                        }
-                      },
-                      {
-                        "Condition": {
-                          "Comparison": {
-                            "ComparisonKind": 0,
-                            "Left": {
-                              "Measure": {
-                                "Expression": {
-                                  "SourceRef": {
-                                    "Entity": "Calculations"
-                                  }
-                                },
-                                "Property": "Icon_Condition"
-                              }
-                            },
-                            "Right": {
-                              "Literal": {
-                                "Value": "2D"
-                              }
-                            }
-                          }
-                        },
-                        "Value": {
-                          "Literal": {
-                            "Value": "'SymbolHigh'"
-                          }
-                        }
-                      },
-                      {
-                        "Condition": {
-                          "Comparison": {
-                            "ComparisonKind": 0,
-                            "Left": {
-                              "Measure": {
-                                "Expression": {
-                                  "SourceRef": {
-                                    "Entity": "Calculations"
-                                  }
-                                },
-                                "Property": "Icon_Condition"
-                              }
-                            },
-                            "Right": {
-                              "Literal": {
-                                "Value": "1D"
-                              }
-                            }
-                          }
-                        },
-                        "Value": {
-                          "Literal": {
-                            "Value": "'SymbolMedium'"
-                          }
-                        }
-                      }
-                    ]
-                  }
-                }
-              }
-            }
-          },
-          "selector": {
-            "data": [
-              {
-                "dataViewWildcard": {
-                  "matchingOption": 1
-                }
-              }
-            ],
-            "metadata": "incident.Sub Status"
           }
         }
       ]

@@ -178,7 +178,7 @@ table Calculations
 		displayFolder: #Other
 		lineageTag: 5436a1c4-9bb9-4214-9bd7-90dbc4ac3d27
 
-	measure 'Avg.response time color' =
+	measure 'Avg.response time colorful' =
 			
 			IF ( [Avg. Response Time (Working Day Hours)] >= 48, "#FF6400", "#2E3844" )
 		displayFolder: #Other
