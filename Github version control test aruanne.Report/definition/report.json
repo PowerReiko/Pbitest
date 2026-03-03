@@ -1,0 +1,158 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/report/3.1.0/schema.json",
+  "themeCollection": {
+    "baseTheme": {
+      "name": "CY24SU10",
+      "reportVersionAtImport": {
+        "visual": "1.8.100",
+        "report": "2.0.100",
+        "page": "1.3.100"
+      },
+      "type": "SharedResources"
+    },
+    "customTheme": {
+      "name": "Oixio_Theme36384541225791556.json",
+      "reportVersionAtImport": {
+        "visual": "1.8.100",
+        "report": "2.0.100",
+        "page": "1.3.100"
+      },
+      "type": "RegisteredResources"
+    }
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "214025fe2e5c04398d91",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Date"
+              }
+            },
+            "Property": "IsWorkingDay"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "User"
+      },
+      {
+        "name": "312a17a6e1c04b5bc45d",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "# incident"
+              }
+            },
+            "Property": "Case Type"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "User"
+      }
+    ]
+  },
+  "objects": {
+    "section": [
+      {
+        "properties": {
+          "verticalAlignment": {
+            "expr": {
+              "Literal": {
+                "Value": "'Top'"
+              }
+            }
+          }
+        }
+      }
+    ],
+    "outspacePane": [
+      {
+        "properties": {
+          "expanded": {
+            "expr": {
+              "Literal": {
+                "Value": "false"
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "resourcePackages": [
+    {
+      "name": "SharedResources",
+      "type": "SharedResources",
+      "items": [
+        {
+          "name": "CY24SU10",
+          "path": "BaseThemes/CY24SU10.json",
+          "type": "BaseTheme"
+        }
+      ]
+    },
+    {
+      "name": "RegisteredResources",
+      "type": "RegisteredResources",
+      "items": [
+        {
+          "name": "Oixio_Theme36384541225791556.json",
+          "path": "Oixio_Theme36384541225791556.json",
+          "type": "CustomTheme"
+        },
+        {
+          "name": "database-sync-01-Stroke-Rounde7435489165790758.png",
+          "path": "database-sync-01-Stroke-Rounde7435489165790758.png",
+          "type": "Image"
+        },
+        {
+          "name": "date-time-Stroke-Rounded35978804701398515.png",
+          "path": "date-time-Stroke-Rounded35978804701398515.png",
+          "type": "Image"
+        },
+        {
+          "name": "configuration-01-Stroke-Rounde8989154742451386.png",
+          "path": "configuration-01-Stroke-Rounde8989154742451386.png",
+          "type": "Image"
+        },
+        {
+          "name": "star-Stroke-Rounded007939344772952328.png",
+          "path": "star-Stroke-Rounded007939344772952328.png",
+          "type": "Image"
+        },
+        {
+          "name": "eraser-Stroke-Rounded7136418760196499.png",
+          "path": "eraser-Stroke-Rounded7136418760196499.png",
+          "type": "Image"
+        },
+        {
+          "name": "eraser-Stroke-Rounded6397575229228937.png",
+          "path": "eraser-Stroke-Rounded6397575229228937.png",
+          "type": "Image"
+        }
+      ]
+    },
+    {
+      "name": "newTimelineEBCA53AA6EAF429AA18CF5E2F4E6E3AD",
+      "type": "CustomVisual",
+      "items": [
+        {
+          "name": "newTimelineEBCA53AA6EAF429AA18CF5E2F4E6E3AD.pbiviz.json",
+          "path": "newTimelineEBCA53AA6EAF429AA18CF5E2F4E6E3AD.pbiviz.json",
+          "type": "CustomVisualMetadata"
+        }
+      ]
+    }
+  ],
+  "settings": {
+    "useStylableVisualContainerHeader": true,
+    "exportDataMode": "AllowSummarized",
+    "defaultDrillFilterOtherVisuals": true,
+    "allowChangeFilterTypes": true,
+    "useEnhancedTooltips": true,
+    "useDefaultAggregateDisplayName": true
+  }
+}

@@ -1,0 +1,53 @@
+table 'Väljade kirjeldus'
+	lineageTag: 25c455ab-48ae-471e-8a8e-3c8fd77c27ff
+
+	column Väli
+		dataType: string
+		lineageTag: 07b5c445-2a12-4f71-8377-0ad66f6d115d
+		summarizeBy: none
+		sourceColumn: Väli
+		sortByColumn: Index
+
+		changedProperty = SortByColumn
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'ServiceDesk väli'
+		dataType: string
+		lineageTag: d2a4a3c4-c98e-49da-aa9e-8b9049a8c5cc
+		summarizeBy: none
+		sourceColumn: ServiceDesk väli
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Andmebaas -Tabel - Veeru nimetus'
+		dataType: string
+		lineageTag: 84c2a590-2d8e-4f4f-8278-d2e6f0ef08f2
+		summarizeBy: none
+		sourceColumn: Andmebaas -Tabel - Veeru nimetus
+
+		annotation SummarizationSetBy = Automatic
+
+	column Index
+		dataType: int64
+		formatString: 0
+		lineageTag: 029f1f79-4e48-4566-b532-e684d3956d5f
+		summarizeBy: sum
+		sourceColumn: Index
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Väljade kirjeldus' = m
+		mode: import
+		source =
+				let
+				    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("lZPNTsMwDMdfxeqpSIAQF84wPg7AQGMShzGhLDGbWZtU+WBw55l4gb0YTtNOhQEqlyay//7/XNedTLKT4Eijc3DFB+Trd0suBK12st1sEJw3JVq4tUYF6Tl0Krx4QesQ9uAhHBwcHklTPMpGWCVdSrBiYl7V46whFPxUNCcvCi1KnGbT3Uk2GF1DflkQasXcBXqE57DwkX6z0mh/RAopTdBdTJSS6ti2nSfv2u84VcGQVf1sO36CdUO7D/nt+mP9YVUoiSPa7tdzqrOhnP3SL2lJCrvOnuQSva5LOgRPvsBvjApFsSRLG9A4inpzWNsB1DOFfBwBYEqhafn3qLctt2dtUXhUcKMhvzK8AGl3NtGevjIVGJ1cz8k6DyN0ldFcl5+5UrBijgwveZMiY69vy7yFT9HPNnaO0y3ozgsfHOR8xkv0bUIjFM70bd/VNdJwdDOZuzCD1v64ECW4DmOT6zsf/s9cmCXOt830bxWPqOquTUHp04451ZfAVtHp60vcC2uF9m+QX4h4oXoT2+g/ml81JY319BM=", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [Väli = _t, #"ServiceDesk väli" = _t, #"Andmebaas -Tabel - Veeru nimetus" = _t]),
+				    #"Changed Type" = Table.TransformColumnTypes(Source,{{"Väli", type text}, {"ServiceDesk väli", type text}, {"Andmebaas -Tabel - Veeru nimetus", type text}}),
+				    #"Added Index" = Table.AddIndexColumn(#"Changed Type", "Index", 1, 1, Int64.Type)
+				in
+				    #"Added Index"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

@@ -1,0 +1,61 @@
+/// Eksisteerivate ettevõtete dimensiooni tabel (Andmeallikaks Oixio Dataverse andmebaas)
+/// 
+table '≡ account'
+	lineageTag: 4c5784e3-1dcd-4d39-a1b4-5440dca3be8c
+
+	/// Ettevõtte ID
+	column Account
+		dataType: string
+		isHidden
+		lineageTag: 84dba0fd-4748-4cf4-9144-8b5170bdd592
+		summarizeBy: none
+		sourceColumn: accountid
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	/// Ettevõtte nimi
+	column 'Account Name'
+		dataType: string
+		lineageTag: 763b2d8c-24b2-40e2-8b81-1a757942331d
+		summarizeBy: none
+		sourceColumn: name
+
+		annotation SummarizationSetBy = Automatic
+
+	/// Kliendisuhte juht
+	column Owner
+		dataType: string
+		lineageTag: 8e12b9bb-7a26-4fa8-ad79-09bc77ef6339
+		summarizeBy: none
+		sourceColumn: owneridname
+
+		annotation SummarizationSetBy = Automatic
+
+	/// Sisemine/välimine klient (sisemiste klientide all on mõeldud OIXIO grupi ettevõtteid)
+	column Internal/External
+		dataType: string
+		lineageTag: 6d746aeb-2d4d-4d26-ba54-9af88eeba5d2
+		summarizeBy: none
+		sourceColumn: Internal/External
+
+		annotation SummarizationSetBy = Automatic
+
+	partition '≡ account' = m
+		mode: import
+		queryGroup: Dim_Data
+		source =
+				let
+				    Source = CommonDataService.Database(Server_Dataverse, [CreateNavigationProperties=false]),
+				    dbo_account = Source{[Schema="dbo",Item="account"]}[Data],
+				    #"Removed Other Columns" = Table.SelectColumns(dbo_account,{"accountid", "name", "owneridname"}),
+				    #"Added Conditional Column" = Table.AddColumn(#"Removed Other Columns", "Internal/External", each if Text.Contains([name], "OIXIO") then "Internal" else "External"),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Added Conditional Column",{{"Internal/External", type text}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

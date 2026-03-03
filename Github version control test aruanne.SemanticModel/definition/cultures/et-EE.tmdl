@@ -1,0 +1,59 @@
+cultureInfo et-EE
+	translations
+		model Model
+			table Calculations
+				measure 'Avg. Response Time (Working Day Hours)'
+					caption: Avg. esmareageerimise aeg (Tööpäevade tunnid)
+				measure Label_Days/Hours
+					caption: Reageerimise aeg
+				measure 'Count of cases'
+					caption: Pöördumiste arv
+				measure Label_Days/Hours/cases
+					caption: Keskmine reageerimise aeg (pöördumised)
+				measure Target
+					caption: Eesmärk
+				measure '% Response Within 2 Working Days'
+					caption: 2 tööpäeva jooksul esmareageerimiste %
+			table Date
+				column Month
+					caption: Kuu
+			table '# incident'
+				column 'Case Title'
+					caption: Pöördumise pealkiri
+				column 'Created On'
+					caption: Loodud
+				column 'Case Number'
+					caption: Pöördumise nr.
+				column Customer
+					caption: Klient
+				column Owner
+					caption: Töö omanik
+				column statecodename
+					caption: Olek
+				column 'First Response Sent On'
+					caption: Esmareageerimine
+				column statuscodename
+					caption: Staatus
+				column 'Sub Status'
+					caption: Alam staatus
+				column 'First Response'
+					caption: Esmareageerimine
+				column 'Response in time'
+					caption: Esmareageerimise aeg
+				column 'Case Type'
+					caption: Pöördumise liik
+				column Warranty
+					caption: Garantii
+			table '≡ account'
+				column 'Account Name'
+					caption: Klient
+				column Owner
+					caption: Kliendisuhte juht
+				column Internal/External
+					caption: Sisemine/Välimine
+			table '≡ col_customerproduct'
+				column Name
+					caption: Klient
+				column 'Business Line Digital'
+					caption: Ärisuund
+

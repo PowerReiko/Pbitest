@@ -1,0 +1,493 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.6.0/schema.json",
+  "name": "6ed27d89ec7232b7c324",
+  "position": {
+    "x": 529.891304347826,
+    "y": 336.95652173913038,
+    "z": 5000,
+    "height": 471.01449275362313,
+    "width": 773.55072463768113,
+    "tabOrder": 5000
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Info_Columns"
+                    }
+                  },
+                  "Property": "Name"
+                }
+              },
+              "queryRef": "Info_Columns.Name",
+              "nativeQueryRef": "Name"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Info_Columns"
+                    }
+                  },
+                  "Property": "Table"
+                }
+              },
+              "queryRef": "Info_Columns.Table",
+              "nativeQueryRef": "Table"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Info_Columns"
+                    }
+                  },
+                  "Property": "DataType"
+                }
+              },
+              "queryRef": "Info_Columns.DataType",
+              "nativeQueryRef": "DataType"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Info_Columns"
+                    }
+                  },
+                  "Property": "Description"
+                }
+              },
+              "queryRef": "Info_Columns.Description",
+              "nativeQueryRef": "Description"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Info_Columns"
+                    }
+                  },
+                  "Property": "IsHidden"
+                }
+              },
+              "queryRef": "Info_Columns.IsHidden",
+              "nativeQueryRef": "IsHidden"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "Info_Columns"
+                  }
+                },
+                "Property": "Description"
+              }
+            },
+            "direction": "Ascending"
+          }
+        ]
+      }
+    },
+    "objects": {
+      "columnWidth": [
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "249.6077194249243D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Info_Columns.Description"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "254.32607998120295D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Info_Columns.Name"
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Columns'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "b8894fda2fb9006f69e6",
+        "type": "Exclude",
+        "filter": {
+          "Version": 2,
+          "From": [
+            {
+              "Name": "i",
+              "Entity": "Info_Columns",
+              "Type": 0
+            }
+          ],
+          "Where": [
+            {
+              "Condition": {
+                "Not": {
+                  "Expression": {
+                    "In": {
+                      "Expressions": [
+                        {
+                          "Column": {
+                            "Expression": {
+                              "SourceRef": {
+                                "Source": "i"
+                              }
+                            },
+                            "Property": "Table"
+                          }
+                        },
+                        {
+                          "Column": {
+                            "Expression": {
+                              "SourceRef": {
+                                "Source": "i"
+                              }
+                            },
+                            "Property": "Name"
+                          }
+                        },
+                        {
+                          "Column": {
+                            "Expression": {
+                              "SourceRef": {
+                                "Source": "i"
+                              }
+                            },
+                            "Property": "DataType"
+                          }
+                        },
+                        {
+                          "Column": {
+                            "Expression": {
+                              "SourceRef": {
+                                "Source": "i"
+                              }
+                            },
+                            "Property": "Description"
+                          }
+                        },
+                        {
+                          "Column": {
+                            "Expression": {
+                              "SourceRef": {
+                                "Source": "i"
+                              }
+                            },
+                            "Property": "IsHidden"
+                          }
+                        }
+                      ],
+                      "Values": [
+                        [
+                          {
+                            "Literal": {
+                              "Value": "'#Measures'"
+                            }
+                          },
+                          {
+                            "Literal": {
+                              "Value": "'RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61'"
+                            }
+                          },
+                          {
+                            "Literal": {
+                              "Value": "'Integer'"
+                            }
+                          },
+                          {
+                            "Literal": {
+                              "Value": "null"
+                            }
+                          },
+                          {
+                            "Literal": {
+                              "Value": "true"
+                            }
+                          }
+                        ],
+                        [
+                          {
+                            "Literal": {
+                              "Value": "'account'"
+                            }
+                          },
+                          {
+                            "Literal": {
+                              "Value": "'RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61'"
+                            }
+                          },
+                          {
+                            "Literal": {
+                              "Value": "'Integer'"
+                            }
+                          },
+                          {
+                            "Literal": {
+                              "Value": "null"
+                            }
+                          },
+                          {
+                            "Literal": {
+                              "Value": "true"
+                            }
+                          }
+                        ],
+                        [
+                          {
+                            "Literal": {
+                              "Value": "'Date'"
+                            }
+                          },
+                          {
+                            "Literal": {
+                              "Value": "'RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61'"
+                            }
+                          },
+                          {
+                            "Literal": {
+                              "Value": "'Integer'"
+                            }
+                          },
+                          {
+                            "Literal": {
+                              "Value": "null"
+                            }
+                          },
+                          {
+                            "Literal": {
+                              "Value": "true"
+                            }
+                          }
+                        ],
+                        [
+                          {
+                            "Literal": {
+                              "Value": "'Date set'"
+                            }
+                          },
+                          {
+                            "Literal": {
+                              "Value": "'RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61'"
+                            }
+                          },
+                          {
+                            "Literal": {
+                              "Value": "'Integer'"
+                            }
+                          },
+                          {
+                            "Literal": {
+                              "Value": "null"
+                            }
+                          },
+                          {
+                            "Literal": {
+                              "Value": "true"
+                            }
+                          }
+                        ],
+                        [
+                          {
+                            "Literal": {
+                              "Value": "'incident'"
+                            }
+                          },
+                          {
+                            "Literal": {
+                              "Value": "'RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61'"
+                            }
+                          },
+                          {
+                            "Literal": {
+                              "Value": "'Integer'"
+                            }
+                          },
+                          {
+                            "Literal": {
+                              "Value": "null"
+                            }
+                          },
+                          {
+                            "Literal": {
+                              "Value": "true"
+                            }
+                          }
+                        ],
+                        [
+                          {
+                            "Literal": {
+                              "Value": "'Target'"
+                            }
+                          },
+                          {
+                            "Literal": {
+                              "Value": "'RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61'"
+                            }
+                          },
+                          {
+                            "Literal": {
+                              "Value": "'Integer'"
+                            }
+                          },
+                          {
+                            "Literal": {
+                              "Value": "null"
+                            }
+                          },
+                          {
+                            "Literal": {
+                              "Value": "true"
+                            }
+                          }
+                        ],
+                        [
+                          {
+                            "Literal": {
+                              "Value": "'CRM/Status parameter'"
+                            }
+                          },
+                          {
+                            "Literal": {
+                              "Value": "'RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61'"
+                            }
+                          },
+                          {
+                            "Literal": {
+                              "Value": "'Integer'"
+                            }
+                          },
+                          {
+                            "Literal": {
+                              "Value": "null"
+                            }
+                          },
+                          {
+                            "Literal": {
+                              "Value": "true"
+                            }
+                          }
+                        ]
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "howCreated": "Exclude"
+      },
+      {
+        "name": "c161cfbabf53a12caef1",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Info_Tables"
+              }
+            },
+            "Property": "IsHidden"
+          }
+        },
+        "type": "Categorical",
+        "filter": {
+          "Version": 2,
+          "From": [
+            {
+              "Name": "i",
+              "Entity": "Info_Tables",
+              "Type": 0
+            }
+          ],
+          "Where": [
+            {
+              "Condition": {
+                "In": {
+                  "Expressions": [
+                    {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Source": "i"
+                          }
+                        },
+                        "Property": "IsHidden"
+                      }
+                    }
+                  ],
+                  "Values": [
+                    [
+                      {
+                        "Literal": {
+                          "Value": "false"
+                        }
+                      }
+                    ]
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "howCreated": "User"
+      }
+    ]
+  }
+}

@@ -1,0 +1,31 @@
+table ToDate
+	isHidden
+	lineageTag: 26064032-310e-4a82-a496-15acaa311a1a
+
+	column ToDate
+		dataType: string
+		isHidden
+		lineageTag: 48c1c003-ee5a-4752-b669-410ebd0bd12d
+		summarizeBy: none
+		sourceColumn: ToDate
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	partition ToDate = m
+		mode: import
+		queryGroup: Parameters
+		source =
+				let
+				    Source = DateTime.LocalNow(),
+				    Result = DateTime.ToText(Source,"yyyyMMdd")
+				in
+				    Result
+
+	changedProperty = IsHidden
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Text
+

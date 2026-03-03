@@ -1,0 +1,269 @@
+/// Kuupäeva dimensiooni tabel
+table Date
+	lineageTag: 71065365-3d41-42b2-af22-d4d6ff046868
+	dataCategory: Time
+
+	column Date
+		isKey
+		formatString: Long Date
+		lineageTag: 91e3cb91-4b5a-4867-80c3-045d03a6c593
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Date]
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'Date d.mm.yy'
+		lineageTag: 693891c5-ff0d-47ce-b8f8-879a4e497c2a
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Date d.mm.yy]
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Date d.mm'
+		lineageTag: 9ee817df-c617-4384-8a17-eaed4f92839a
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Date d.mm]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Monthdate
+		formatString: 0
+		lineageTag: b1692fba-87b7-4744-8a00-356dbf5c6654
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Monthdate]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Weekday
+		lineageTag: 33cfa6fd-8611-484e-bf62-74d7c50b40cb
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Weekday]
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Weekday num'
+		formatString: 0
+		lineageTag: a7587d3b-e6e6-434d-a897-43b8b202c147
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Weekday num]
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Week num'
+		formatString: 0
+		lineageTag: bbbc25d1-1edd-4f4d-8c05-acf38d8829f0
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Week num]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Week
+		lineageTag: 26c8cdb4-998c-4e85-aa49-e11b8350c486
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Week]
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Month mmm yy'
+		lineageTag: 9f564d4b-fd6c-454f-a043-f645188bdaad
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Month mmm yy]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Month
+		lineageTag: 53163fa0-a8f0-4ada-9e4f-ab86c7caeec9
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Month]
+		sortByColumn: Yearmonth
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Month number'
+		formatString: 0
+		lineageTag: 0d6029fd-2c88-463a-94c9-f643fd7ac86b
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Month number]
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Month name'
+		lineageTag: ab2e0d10-8378-4151-a255-dc85b8625c20
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Month name]
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Month day'
+		formatString: 0
+		lineageTag: 87cac9ca-94e9-407f-a80e-2c258ee12f91
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Month day]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Quarter
+		lineageTag: 164688de-fe1e-4830-9e93-a007c883ccf2
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Quarter]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Yearweek
+		formatString: 0
+		lineageTag: 1769e163-7105-44f7-baa2-f8b56c31ef35
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Yearweek]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Yearmonth
+		formatString: 0
+		lineageTag: 9c2bed0f-358e-4499-a486-d9c734a6bea1
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Yearmonth]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Yearquarter
+		lineageTag: 58f7660d-a17f-4367-8ce6-9b0484347540
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Yearquarter]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Year
+		formatString: 0
+		lineageTag: 3365eea8-317c-4531-93ae-ea07418fce89
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Year]
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Relative day'
+		formatString: 0
+		lineageTag: 8bde2530-9ce0-4fee-be91-dd5e3557a4c6
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Relative day]
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Relative month'
+		formatString: 0
+		lineageTag: ff43e78a-1fc4-415b-b9f6-ef29d02b0a61
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Relative month]
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Relative year'
+		formatString: 0
+		lineageTag: 808c8578-4ccc-4d2d-b166-2a869815fbb4
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Relative year]
+
+		annotation SummarizationSetBy = Automatic
+
+	column IsHoliday
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 8ac54ee7-fe98-4761-83e2-f9eb7fe58d94
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [IsHoliday]
+
+		annotation SummarizationSetBy = Automatic
+
+	column IsWeekend
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 977760ab-01fc-41d5-82ab-9af6cc49a869
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [IsWeekend]
+
+		annotation SummarizationSetBy = Automatic
+
+	column IsWorkingDay =
+			
+			IF('Date'[IsWeekend] || 'Date'[IsHoliday],
+			FALSE(),
+			TRUE()
+			)
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 33da0cb8-9fdd-4374-8218-b0f844b54119
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Date = calculated
+		mode: import
+		source = ```
+				
+				VAR algkpv1 = MAX(FromDate[FromDate])
+				VAR loppkpv1 = MAX(FutureDate[FutureDate])
+				VAR algkpv = DATE(LEFT(algkpv1,4),MID(algkpv1,5,2),RIGHT(algkpv1,2))
+				VAR loppkpv = DATE(LEFT(loppkpv1,4),MID(loppkpv1,5,2),RIGHT(loppkpv1,2))
+				VAR BaseCalendar =
+				   	  CALENDAR(algkpv,loppkpv)
+				RETURN
+				    GENERATE (
+				        BaseCalendar,
+				        VAR BaseDate = [Date]
+				        VAR Quarternum = FORMAT( BaseDate, "q" )
+				        VAR QuarterRome = SWITCH ( Quarternum, "1", "I", "2", "II", "3", "III", "4", "IV")
+						VAR RelDay = IF(BaseDate> TODAY(),(DATEDIFF(TODAY(),BaseDate, DAY )),-1 *(DATEDIFF(BaseDate,TODAY(), DAY )))
+						VAR RelMonth =  IF(BaseDate> TODAY(),(DATEDIFF(TODAY(),BaseDate, MONTH )),-1 *(DATEDIFF(BaseDate,TODAY(), MONTH )))
+						VAR RelYear = IF(BaseDate> TODAY(),(DATEDIFF(TODAY(),BaseDate, YEAR )),-1 *(DATEDIFF(BaseDate,TODAY(), YEAR )))
+				        VAR YearWeek = IF(WEEKNUM(BaseDate,21) >= 52 && MONTH ( BaseDate ) = 1, YEAR ( BaseDate ) - 1, YEAR ( BaseDate ))  * 100 + WEEKNUM(BaseDate,21)
+				        
+				        RETURN ROW (
+				            "Date d.mm.yy" , Format(BaseDate,"d.MM.yy"),
+				            "Date d.mm", Format(BaseDate,"d.MM"),
+				            "Monthdate", MONTH ( BaseDate ) * 100 + DAY(BaseDate),
+				            "Weekday", Format(BaseDate,"ddd"),
+				            "Weekday num", WEEKDAY(BaseDate,2),
+				            "Week num" , WEEKNUM(BaseDate,21),
+				            "Week" , WEEKNUM(BaseDate,21) & "/" & FORMAT(BaseDate,"yy"),
+				            "Month mmm yy" , FORMAT ( BaseDate, "mmm yy" ),
+				            "Month" , FORMAT ( BaseDate, "m-yy" ),
+				            "Month number", MONTH ( BaseDate ),
+				            "Month name", FORMAT ( BaseDate, "mmmm" ),
+				            "Month day", DAY(BaseDate),
+				            "Quarter", QuarterRome & "-" & RIGHT(FORMAT(BaseDate, "ddyy"),2),
+				            "Yearweek" , YearWeek,
+				            "Yearmonth", YEAR ( BaseDate ) * 100 + MONTH ( BaseDate ) ,
+							"Yearquarter", Format(BaseDate,"yyyyq"),
+				            "Year", YEAR ( BaseDate ),
+				            "Relative day", RelDay,
+				            "Relative month", RelMonth,
+							"Relative year", RelYear,
+				            "IsHoliday", IF(CONTAINS(FILTER('Public holidays', 'Public holidays'[DayTypeName] = "StateHoliday"),'Public holidays'[TRANSDATE],BaseDate),TRUE,FALSE()),
+				            "IsWeekend", IF(WEEKDAY(BaseDate, 2) > 5, TRUE(), FALSE())
+				            )
+				    )
+				```
+
+	annotation PBI_Id = 1f3c9f85bd454f22b4fd7cdd252bf191
+

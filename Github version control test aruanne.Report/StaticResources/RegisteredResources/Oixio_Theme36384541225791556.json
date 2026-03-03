@@ -1,0 +1,1572 @@
+{
+  "name": "Oixio Theme",
+  "textClasses": {
+    "label": {
+      "fontFace": "Segoe UI"
+    },
+    "callout": {
+      "fontFace": "Segoe UI"
+    },
+    "title": {
+      "fontSize": 10,
+      "fontFace": "Segoe UI Semibold",
+      "color": "#000000"
+    },
+    "header": {
+      "fontSize": 16,
+      "fontFace": "Segoe UI",
+      "color": "#81878F"
+    }
+  },
+  "dataColors": [
+    "#2e3844",
+    "#ff6400",
+    "#b0b1b3",
+    "#e3e6eb",
+    "#d8009d",
+    "#8AD4EB",
+    "#FE9666",
+    "#A66999",
+    "#3599B8",
+    "#DFBFBF",
+    "#4AC5BB",
+    "#5F6B6D",
+    "#FB8281",
+    "#F4D25A",
+    "#7F898A",
+    "#A4DDEE",
+    "#FDAB89",
+    "#B687AC",
+    "#28738A",
+    "#A78F8F",
+    "#168980",
+    "#293537",
+    "#BB4A4A",
+    "#B59525",
+    "#475052",
+    "#6A9FB0",
+    "#BD7150",
+    "#7B4F71",
+    "#1B4D5C",
+    "#706060",
+    "#0F5C55",
+    "#1C2325",
+    "#7D3231",
+    "#796419",
+    "#303637",
+    "#476A75",
+    "#7E4B36",
+    "#52354C",
+    "#0D262E",
+    "#544848",
+    "#016AB8",
+    "#373D49",
+    "#FDB15D",
+    "#AAF20F",
+    "#5F646D",
+    "#8AA3EB",
+    "#FEE266",
+    "#A6687A",
+    "#3557B8",
+    "#DFCFBF",
+    "#4A91C5",
+    "#5F646D",
+    "#FBBF81",
+    "#C9F459",
+    "#7F838A",
+    "#A4B8EE",
+    "#FDE489",
+    "#B68794",
+    "#28428A",
+    "#A79B8F",
+    "#165889",
+    "#292E37",
+    "#BB824A",
+    "#8DB525",
+    "#474A52",
+    "#6A7CB0",
+    "#BDA750",
+    "#7B4F5A",
+    "#1B2C5C",
+    "#706860",
+    "#0F3C5C",
+    "#1C1E25",
+    "#7D5731",
+    "#5D7918",
+    "#303237",
+    "#475375",
+    "#7E6F36",
+    "#52343D",
+    "#0D152E",
+    "#544E48",
+    "#010EB8",
+    "#393749",
+    "#F9FD5D",
+    "#38F20F",
+    "#615F6D",
+    "#A08AEB",
+    "#CEFE66",
+    "#A67668",
+    "#5435B8",
+    "#DFDFBF",
+    "#4A53C5",
+    "#615F6D",
+    "#FAFB81",
+    "#7CF459",
+    "#807F8A",
+    "#B5A4EE",
+    "#DBFD89",
+    "#B69087",
+    "#3F288A",
+    "#A7A78F",
+    "#161F89",
+    "#2A2937",
+    "#BBBB4A",
+    "#45B525",
+    "#494752",
+    "#7A6AB0",
+    "#9CBD50",
+    "#7B594F",
+    "#291B5C",
+    "#707060",
+    "#0F155C",
+    "#1E1C25",
+    "#7C7D31",
+    "#2D7918",
+    "#303037",
+    "#514775",
+    "#697E36",
+    "#523B34",
+    "#140D2E",
+    "#545448",
+    "#4E01B8",
+    "#423749",
+    "#A9FD5D",
+    "#0FF256",
+    "#675F6D",
+    "#D18AEB",
+    "#82FE66",
+    "#A69468",
+    "#9535B8",
+    "#CFDFBF",
+    "#7D4AC5",
+    "#675F6D",
+    "#BCFB81",
+    "#59F484",
+    "#857F8A",
+    "#DAA4EE",
+    "#A1FD89",
+    "#B6A887",
+    "#6F288A",
+    "#9BA78F",
+    "#461689",
+    "#322937",
+    "#82BB4A",
+    "#25B54C",
+    "#4E4752",
+    "#9E6AB0",
+    "#65BD50",
+    "#7B6E4F",
+    "#4A1B5C",
+    "#687060",
+    "#2E0F5C",
+    "#221C25",
+    "#567D31",
+    "#187934",
+    "#343037",
+    "#684775",
+    "#457E36",
+    "#524934",
+    "#250D2E",
+    "#4E5448",
+    "#AA01B8",
+    "#493746",
+    "#5DFD62",
+    "#0FF2C7",
+    "#6D5F6B",
+    "#EB8AD3",
+    "#66FE96",
+    "#99A668",
+    "#B83598",
+    "#BFDFBF",
+    "#BA4AC5",
+    "#6D5F6B",
+    "#81FB82",
+    "#59F4D1",
+    "#8A7F89",
+    "#EEA4DD",
+    "#89FDAA",
+    "#ACB687",
+    "#8A2873",
+    "#8FA78F",
+    "#801689",
+    "#372934",
+    "#4ABB4A",
+    "#25B594",
+    "#524750",
+    "#B06A9F",
+    "#50BD70",
+    "#717B4F",
+    "#5C1B4D",
+    "#607060",
+    "#540F5C",
+    "#251C22",
+    "#317D32",
+    "#187964",
+    "#373036",
+    "#75476A",
+    "#367E4A",
+    "#4C5234",
+    "#2E0D26",
+    "#485448",
+    "#B8016A",
+    "#49373D",
+    "#5DFDB1",
+    "#0FAAF2",
+    "#6D5F64",
+    "#EB8AA3",
+    "#66FEE2",
+    "#7AA668",
+    "#B83557",
+    "#BFDFCF",
+    "#C54A91",
+    "#6D5F64",
+    "#81FBBF",
+    "#59C9F4",
+    "#8A7F83",
+    "#EEA4B8",
+    "#89FDE5",
+    "#94B687",
+    "#8A2842",
+    "#8FA79B",
+    "#891658",
+    "#37292E",
+    "#4ABB82",
+    "#258DB5",
+    "#52474A",
+    "#B06A7C",
+    "#50BDA7",
+    "#5B7B4F",
+    "#5C1B2C",
+    "#607068",
+    "#5C0F3C",
+    "#251C1E",
+    "#317D58",
+    "#185D79",
+    "#373032",
+    "#754752",
+    "#367E6F",
+    "#3D5234",
+    "#2E0D15",
+    "#48544E",
+    "#B8010E",
+    "#493937",
+    "#5DF9FD",
+    "#0F38F2",
+    "#6D615F",
+    "#EBA08A",
+    "#66CEFE",
+    "#68A676",
+    "#B85435",
+    "#BFDFDF",
+    "#C54A53",
+    "#6D615F",
+    "#81FAFB",
+    "#597CF4",
+    "#8A807F",
+    "#EEB5A4",
+    "#89DBFD",
+    "#87B691",
+    "#8A3F28",
+    "#8FA7A7",
+    "#89161E",
+    "#372A29",
+    "#4ABBBB",
+    "#2545B5",
+    "#524947",
+    "#B07A6A",
+    "#509CBD",
+    "#4F7B58",
+    "#5C291B",
+    "#607070",
+    "#5C0F15",
+    "#251E1C",
+    "#317C7D",
+    "#182D79",
+    "#373030",
+    "#755147",
+    "#36687E",
+    "#34523B",
+    "#2E140D",
+    "#485454",
+    "#B84E01",
+    "#494337",
+    "#5DA9FD",
+    "#560FF2",
+    "#6D685F",
+    "#EBD18A",
+    "#6681FE",
+    "#68A694",
+    "#B89535",
+    "#BFCFDF",
+    "#C57D4A",
+    "#6D685F",
+    "#81BCFB",
+    "#8459F4",
+    "#8A857F",
+    "#EEDAA4",
+    "#89A1FD",
+    "#87B6A8",
+    "#8A7028",
+    "#8F9BA7",
+    "#894616",
+    "#373229",
+    "#4A82BB",
+    "#4D25B5",
+    "#524E47",
+    "#B09E6A",
+    "#5065BD",
+    "#4F7B6F",
+    "#5C4A1B",
+    "#606870",
+    "#5C2E0F",
+    "#25221C",
+    "#31567D",
+    "#341879",
+    "#373430",
+    "#756947",
+    "#36447E",
+    "#345249",
+    "#2E250D",
+    "#484E54",
+    "#B8A901",
+    "#464937",
+    "#615DFD",
+    "#C70FF2",
+    "#6B6D5F",
+    "#D4EB8A",
+    "#9666FE",
+    "#6898A6",
+    "#99B835",
+    "#BFBFDF",
+    "#C5BA4A",
+    "#6B6D5F",
+    "#8181FB",
+    "#D159F4",
+    "#898A7F",
+    "#DDEEA4",
+    "#AA89FD",
+    "#87ACB6",
+    "#738A28",
+    "#8F8FA7",
+    "#897F16",
+    "#353729",
+    "#4A4ABB",
+    "#9425B5",
+    "#505247",
+    "#9FB06A",
+    "#7050BD",
+    "#4F717B",
+    "#4D5C1B",
+    "#606070",
+    "#5C540F",
+    "#23251C",
+    "#31317D",
+    "#641879",
+    "#363730",
+    "#6A7547",
+    "#4B367E",
+    "#344C52",
+    "#262E0D",
+    "#484854",
+    "#6AB801",
+    "#3D4937",
+    "#B15DFD",
+    "#F20FAA",
+    "#646D5F",
+    "#A3EB8A",
+    "#E266FE",
+    "#687AA6",
+    "#57B835",
+    "#CFBFDF",
+    "#91C54A",
+    "#646D5F",
+    "#BF81FB",
+    "#F459C9",
+    "#838A7F",
+    "#B7EEA4",
+    "#E589FD",
+    "#8794B6",
+    "#428A28",
+    "#9B8FA7",
+    "#588916",
+    "#2E3729",
+    "#824ABB",
+    "#B5258D",
+    "#4A5247",
+    "#7CB06A",
+    "#A750BD",
+    "#4F5B7B",
+    "#2C5C1B",
+    "#686070",
+    "#3C5C0F",
+    "#1E251C",
+    "#57317D",
+    "#79185D",
+    "#323730",
+    "#537547",
+    "#6F367E",
+    "#343D52",
+    "#152E0D",
+    "#4E4854",
+    "#0FB801",
+    "#37493A",
+    "#FD5DF9",
+    "#F20F39",
+    "#5F6D61",
+    "#8AEBA1",
+    "#FE66CE",
+    "#7568A6",
+    "#35B854",
+    "#DFBFDF",
+    "#54C54A",
+    "#5F6D61",
+    "#FB81FA",
+    "#F4597C",
+    "#7F8A80",
+    "#A4EEB5",
+    "#FD89DB",
+    "#9187B6",
+    "#288A3F",
+    "#A78FA7",
+    "#1F8916",
+    "#29372B",
+    "#BB4ABB",
+    "#B52544",
+    "#475249",
+    "#6AB07B",
+    "#BD509B",
+    "#594F7B",
+    "#1B5C2A",
+    "#706070",
+    "#155C0F",
+    "#1C251E",
+    "#7D317B",
+    "#79182D",
+    "#303731",
+    "#477552",
+    "#7E3668",
+    "#3B3452",
+    "#0D2E14",
+    "#544854",
+    "#01B84E",
+    "#374942",
+    "#FD5DA9",
+    "#F2560F",
+    "#5F6D67",
+    "#8AEBD1",
+    "#FE6682",
+    "#9468A6",
+    "#35B895",
+    "#DFBFCF",
+    "#4AC57D",
+    "#5F6D67",
+    "#FB81BD",
+    "#F48459",
+    "#7F8A85",
+    "#A4EEDA",
+    "#FD89A1",
+    "#A887B6",
+    "#288A6F",
+    "#A78F9B",
+    "#168946",
+    "#293732",
+    "#BB4A82",
+    "#B54C25",
+    "#47524E",
+    "#6AB09D",
+    "#BD5065",
+    "#6E4F7B",
+    "#1B5C4A",
+    "#706068",
+    "#0F5C2E",
+    "#1C2522",
+    "#7D3156",
+    "#793418",
+    "#303734",
+    "#477568",
+    "#7E3644",
+    "#493452",
+    "#0D2E25",
+    "#54484E"
+  ],
+  "minimum": "#FFFFFF",
+  "center": "#FFC199",
+  "maximum": "#FF6400",
+  "bad": "#F32600",
+  "neutral": "#F7B500",
+  "good": "#80C600",
+  "visualStyles": {
+    "*": {
+      "*": {
+        "border": [
+          {
+            "show": true,
+            "color": {
+              "solid": {
+                "color": "#e3e6ec"
+              }
+            },
+            "radius": 10
+          }
+        ],
+        "padding": [
+          {
+            "top": 10,
+            "bottom": 10,
+            "left": 15,
+            "right": 15
+          }
+        ],
+        "dropShadow": [
+          {
+            "show": true,
+            "color": {
+              "solid": {
+                "color": "#B3B3B3"
+              }
+            },
+            "position": "Outer",
+            "preset": "BottomRight"
+          }
+        ],
+        "title": [
+          {
+            "show": true,
+            "alignment": "Left",
+            "fontColor": {
+              "solid": {
+                "color": "#81878F"
+              }
+            },
+            "fontSize": 10,
+            "fontFamily": "Segoe UI Semibold",
+            "spacing": 10
+          }
+        ],
+        "visualTooltip": [
+          {
+            "titleFontColor": {
+              "solid": {
+                "color": "#000000"
+              }
+            },
+            "valueFontColor": {
+              "solid": {
+                "color": "#000000"
+              }
+            },
+            "background": {
+              "solid": {
+                "color": "#EEF0F3"
+              }
+            }
+          }
+        ],
+        "visualHeader": [
+          {
+            "show": false
+          }
+        ],
+        "background": [
+          {
+            "color": {
+              "solid": {
+                "color": "#FFFFFF"
+              }
+            }
+          }
+        ]
+      }
+    },
+    "image": {
+      "*": {
+        "imageScaling": [
+          {
+            "imageScalingType": "Normal"
+          }
+        ],
+        "general": [
+          {
+            "keepLayerOrder": true
+          }
+        ],
+        "title": [
+          {
+            "show": false
+          }
+        ],
+        "dropShadow": [
+          {
+            "show": false
+          }
+        ],
+        "outline": [
+          {
+            "show": false
+          }
+        ],
+        "padding": [
+          {
+            "top": 0,
+            "bottom": 0,
+            "left": 0,
+            "right": 0
+          }
+        ],
+        "border": [
+          {
+            "show": false
+          }
+        ]
+      }
+    },
+    "shape": {
+      "*": {
+        "outline": [
+          {
+            "show": false
+          }
+        ],
+        "title": [
+          {
+            "show": false
+          }
+        ],
+        "dropShadow": [
+          {
+            "show": false
+          }
+        ],
+        "padding": [
+          {
+            "top": 0,
+            "bottom": 0,
+            "left": 0,
+            "right": 0
+          }
+        ],
+        "border": [
+          {
+            "show": false
+          }
+        ],
+        "fill": [
+          {
+            "show": true,
+            "fillColor": {
+              "solid": {
+                "color": "#2E3844"
+              }
+            }
+          }
+        ]
+      }
+    },
+    "clusteredColumnChart": {
+      "*": {
+        "general": [
+          {
+            "responsive": true,
+            "keepLayerOrder": true
+          }
+        ],
+        "legend": [
+          {
+            "show": true,
+            "position": "Top",
+            "showTitle": false,
+            "titleText": "",
+            "fontColor": "#2E3844",
+            "fontSize": 8,
+            "fontFamily": "Segoe UI"
+          }
+        ],
+        "categoryAxis": [
+          {
+            "show": true,
+            "color": {
+              "solid": {
+                "color": "#949494"
+              }
+            },
+            "fontSize": 8,
+            "fontFamily": "Segoe UI",
+            "preferredCategoryWidth": 20,
+            "maxMarginFactor": 25,
+            "innerPadding": 15,
+            "concatenateLabels": true,
+            "showAxisTitle": false,
+            "axisStyle": "showTitleOnly",
+            "titleColor": {
+              "solid": {
+                "color": "#949494"
+              }
+            },
+            "titleText": "Add an Axis Title",
+            "titleFontSize": 8,
+            "titleFontFamily": "Segoe UI"
+          }
+        ],
+        "valueAxis": [
+          {
+            "show": false,
+            "position": "Left",
+            "labelColor": {
+              "solid": {
+                "color": "#949494"
+              }
+            },
+            "fontSize": 8,
+            "fontFamily": "Segoe UI",
+            "labelPrecision": 0,
+            "labelDisplayUnits": 0,
+            "showAxisTitle": false,
+            "axisStyle": "showUnitOnly",
+            "color": {
+              "solid": {
+                "color": "#949494"
+              }
+            },
+            "titleText": "Add an Axis Title",
+            "titleFontSize": 8,
+            "titleFontFamily": "Segoe UI",
+            "gridLineShow": false,
+            "gridLineColor": {
+              "solid": {
+                "color": "#949494"
+              }
+            },
+            "gridLineThickness": 1
+          }
+        ],
+        "zoom": [
+          {
+            "show": false,
+            "showLabels": true,
+            "showTooltip": true
+          }
+        ],
+        "labels": [
+          {
+            "show": true,
+            "color": {
+              "solid": {
+                "color": "#2E3844"
+              }
+            },
+            "labelDisplayUnits": 1,
+            "labelPrecision": 2,
+            "labelOrientation": 1,
+            "labelPosition": "OutsideEnd",
+            "labelOverflow": true,
+            "fontFamily": "Segoe UI Semibold",
+            "fontSize": 8,
+            "enableBackground": false
+          }
+        ]
+      }
+    },
+    "clusteredBarChart": {
+      "*": {
+        "general": [
+          {
+            "responsive": true,
+            "keepLayerOrder": true
+          }
+        ],
+        "legend": [
+          {
+            "show": true,
+            "position": "Right",
+            "showTitle": false,
+            "titleText": "Add a legend title",
+            "legendColor": {
+              "solid": {
+                "color": "#949494"
+              }
+            },
+            "fontFamily": "Arial",
+            "fontSize": 8
+          }
+        ],
+        "categoryAxis": [
+          {
+            "show": true,
+            "position": "Right",
+            "labelColor": {
+              "solid": {
+                "color": "#01B8AA"
+              }
+            },
+            "fontSize": 14,
+            "fontFamily": "Segoe UI",
+            "preferredCategoryWidth": 30,
+            "maxMarginFactor": 28,
+            "innerPadding": 22,
+            "concatenateLabels": true,
+            "showAxisTitle": true,
+            "axisStyle": "showTitleOnly",
+            "titleColor": {
+              "solid": {
+                "color": "#01B8AA"
+              }
+            },
+            "titleText": "asdf",
+            "titleFontSize": 12,
+            "titleFontFamily": "Segoe UI"
+          }
+        ],
+        "valueAxis": [
+          {
+            "show": true,
+            "position": "Right",
+            "axisScale": "Linear",
+            "labelColor": {
+              "solid": {
+                "color": "#01B8AA"
+              }
+            },
+            "fontSize": 14,
+            "fontFamily": "Segoe UI",
+            "showAxisTitle": true,
+            "axisStyle": "showTitleOnly",
+            "color": {
+              "solid": {
+                "color": "#01B8AA"
+              }
+            },
+            "titleText": "asdf",
+            "titleFontSize": 12,
+            "titleFontFamily": "Segoe UI",
+            "gridlineShow": true,
+            "gridlineColor": {
+              "solid": {
+                "color": "#01B8AA"
+              }
+            },
+            "gridlineThickness": 2,
+            "gridlineStyle": "dashed"
+          }
+        ],
+        "dataPoint": [
+          {
+            "defaultColor": {
+              "solid": {
+                "color": "#448822"
+              }
+            }
+          }
+        ],
+        "labels": [
+          {
+            "show": true,
+            "color": {
+              "solid": {
+                "color": "#EEEEEE"
+              }
+            },
+            "labelPosition": "OutsideEnd",
+            "fontSize": 11,
+            "fontFamily": "Segoe UI",
+            "enableBackground": true,
+            "backgroundColor": {
+              "solid": {
+                "color": "#0928DD"
+              }
+            },
+            "backgroundTransparency": 30
+          }
+        ],
+        "plotArea": [
+          {
+            "transparency": 20
+          }
+        ]
+      }
+    },
+    "pivotTable": {
+      "*": {
+        "stylePreset": [
+          {
+            "name": "Default"
+          }
+        ],
+        "general": [
+          {
+            "keepLayerOrder": true
+          }
+        ],
+        "visualHeader": [
+          {
+            "show": true,
+            "showFilterRestatementButton": false,
+            "showOptionsMenu": false,
+            "showSeeDataLayoutToggleButton": false,
+            "showPinButton": false,
+            "showDrillDownExpandButton": true,
+            "showDrillDownLevelButton": true,
+            "showDrillToggleButton": true,
+            "showDrillUpButton": true,
+            "showDrillRoleSelector": false,
+            "showVisualErrorButton": false,
+            "showVisualWarningButton": false,
+            "showVisualInformationButton": false
+          }
+        ],
+        "grid": [
+          {
+            "gridVertical": false,
+            "gridVerticalColor": {
+              "solid": {
+                "color": "#E5E5E5"
+              }
+            },
+            "gridVerticalWeight": 1,
+            "gridHorizontal": true,
+            "gridHorizontalColor": {
+              "solid": {
+                "color": "#E5E5E5"
+              }
+            },
+            "gridHorizontalWeight": 1,
+            "rowPadding": 2,
+            "outlineColor": {
+              "solid": {
+                "color": "#2E3844"
+              }
+            },
+            "outlineWeight": 1
+          }
+        ],
+        "columnHeaders": [
+          {
+            "fontColor": {
+              "solid": {
+                "color": "#000000"
+              }
+            },
+            "backColor": {
+              "solid": {
+                "color": "#FFFFFF"
+              }
+            },
+            "autoSizeColumnWidth": true,
+            "outline": "Frame",
+            "fontFamily": "Segoe UI Semibold",
+            "fontSize": 10,
+            "alignment": "Center",
+            "titleAlignment": "Center",
+            "urlIcon": true,
+            "wordWrap": true
+          }
+        ],
+        "rowHeaders": [
+          {
+            "fontColor": {
+              "solid": {
+                "color": "#000000"
+              }
+            },
+            "backColor": {
+              "solid": {
+                "color": "#FFFFFF"
+              }
+            },
+            "outline": "Frame",
+            "stepped": true,
+            "steppedLayoutIndentation": 10,
+            "urlIcon": true,
+            "wordWrap": false,
+            "fontFamily": "Segoe UI",
+            "fontSize": 10,
+            "alignment": "Left",
+            "showExpandCollapseButtons": true
+          }
+        ],
+        "values": [
+          {
+            "fontColorPrimary": {
+              "solid": {
+                "color": "#000000"
+              }
+            },
+            "backColorPrimary": {
+              "solid": {
+                "color": "#FFFFFF"
+              }
+            },
+            "fontColorSecondary": {
+              "solid": {
+                "color": "#000000"
+              }
+            },
+            "backColorSecondary": {
+              "solid": {
+                "color": "#F4F5F7"
+              }
+            },
+            "bandedRowHeaders": true,
+            "valuesOnRow": false,
+            "outline": "Frame",
+            "urlIcon": true,
+            "wordWrap": false,
+            "fontFamily": "Segoe UI",
+            "fontSize": 10
+          }
+        ],
+        "subTotals": [
+          {
+            "rowSubtotals": true,
+            "columnSubtotals": true,
+            "fontColor": {
+              "solid": {
+                "color": "#000000"
+              }
+            },
+            "fontFamily": "Segoe UI",
+            "backColor": {
+              "solid": {
+                "color": "#FFFFFF"
+              }
+            },
+            "fontSize": 10,
+            "applyToHeaders": true,
+            "rowSubtotalsPosition": "Top",
+            "perRowLevel": false,
+            "perColumnLevel": false
+          }
+        ],
+        "total": [
+          {
+            "fontColor": {
+              "solid": {
+                "color": "#000000"
+              }
+            },
+            "fontFamily": "Segoe UI",
+            "backColor": {
+              "solid": {
+                "color": "#FFFFFF"
+              }
+            },
+            "applyToHeaders": false,
+            "fontSize": 10
+          }
+        ],
+        "padding": [
+          {
+            "top": 10,
+            "bottom": 10,
+            "left": 15,
+            "right": 10
+          }
+        ]
+      }
+    },
+    "tableEx": {
+      "*": {
+        "general": [
+          {
+            "keepLayerOrder": true
+          }
+        ],
+        "grid": [
+          {
+            "gridVertical": false,
+            "gridVerticalColor": {
+              "solid": {
+                "color": "#E5E5E5"
+              }
+            },
+            "gridVerticalWeight": 1,
+            "gridHorizontal": true,
+            "gridHorizontalColor": {
+              "solid": {
+                "color": "#E5E5E5"
+              }
+            },
+            "gridHorizontalWeight": 1,
+            "rowPadding": 2,
+            "outlineColor": {
+              "solid": {
+                "color": "#2E3844"
+              }
+            },
+            "outlineWeight": 1
+          }
+        ],
+        "columnHeaders": [
+          {
+            "fontColor": {
+              "solid": {
+                "color": "#000000"
+              }
+            },
+            "backColor": {
+              "solid": {
+                "color": "#FFFFFF"
+              }
+            },
+            "autoSizeColumnWidth": true,
+            "outline": "Frame",
+            "fontFamily": "Segoe UI Semibold",
+            "fontSize": 10,
+            "alignment": "Center",
+            "titleAlignment": "Center",
+            "urlIcon": true,
+            "wordWrap": true
+          }
+        ],
+        "values": [
+          {
+            "fontColorPrimary": {
+              "solid": {
+                "color": "#000000"
+              }
+            },
+            "backColorPrimary": {
+              "solid": {
+                "color": "#FFFFFF"
+              }
+            },
+            "fontColorSecondary": {
+              "solid": {
+                "color": "#000000"
+              }
+            },
+            "backColorSecondary": {
+              "solid": {
+                "color": "#F4F5F7"
+              }
+            },
+            "outline": "Frame",
+            "urlIcon": true,
+            "wordWrap": false,
+            "fontFamily": "Segoe UI",
+            "fontSize": 10
+          }
+        ],
+        "total": [
+          {
+            "totals": true,
+            "fontColor": {
+              "solid": {
+                "color": "#000000"
+              }
+            },
+            "backColor": {
+              "solid": {
+                "color": "#FFFFFF"
+              }
+            },
+            "outline": "Frame",
+            "fontFamily": "Segoe UI",
+            "fontSize": 10
+          }
+        ],
+        "stylePreset": [
+          {
+            "name": "Default"
+          }
+        ],
+        "visualHeader": [
+          {
+            "show": true,
+            "showPinButton": false
+          }
+        ],
+        "padding": [
+          {
+            "top": 10,
+            "bottom": 10,
+            "left": 15,
+            "right": 10
+          }
+        ]
+      }
+    },
+    "slicer": {
+      "*": {
+        "general": [
+          {
+            "outlineColor": {
+              "solid": {
+                "color": "#444444"
+              }
+            },
+            "outlineWeight": 1,
+            "responsive": true
+          }
+        ],
+        "dropShadow": [
+          {
+            "show": false
+          }
+        ],
+        "background": [
+          {
+            "show": false
+          }
+        ],
+        "title": [
+          {
+            "show": false
+          }
+        ],
+        "border": [
+          {
+            "show": false
+          }
+        ],
+        "padding": [
+          {
+            "top": 0,
+            "bottom": 0,
+            "left": 10,
+            "right": 10
+          }
+        ],
+        "selection": [
+          {
+            "selectAllCheckboxEnabled": true,
+            "singleSelect": false
+          }
+        ],
+        "header": [
+          {
+            "show": true,
+            "fontColor": {
+              "solid": {
+                "color": "#000000"
+              }
+            },
+            "background": {
+              "solid": {
+                "color": "#FFFFFF00"
+              }
+            },
+            "outline": "None",
+            "textSize": 9,
+            "fontFamily": "Segoe UI Semibold"
+          }
+        ],
+        "items": [
+          {
+            "fontColor": {
+              "solid": {
+                "color": "#000000"
+              }
+            },
+            "background": {
+              "solid": {
+                "color": "#FFFFFF00"
+              }
+            },
+            "outline": "None",
+            "textSize": 9,
+            "fontFamily": "Segoe UI",
+            "padding": 3
+          }
+        ],
+        "slider": [
+          {
+            "color": {
+              "solid": {
+                "color": "#FF373A"
+              }
+            }
+          }
+        ]
+      }
+    },
+    "textbox": {
+      "*": {
+        "*": [
+          {
+            "fontSize": 16,
+            "fontFamily": "Segoe UI",
+            "wordWrap": false,
+            "color": {
+              "solid": {
+                "color": "#FFFFFF"
+              }
+            }
+          }
+        ],
+        "general": [
+          {
+            "responsive": true,
+            "keepLayerOrder": true
+          }
+        ],
+        "title": [
+          {
+            "show": true,
+            "fontColor": {
+              "solid": {
+                "color": "#FFFFFF"
+              }
+            },
+            "fontSize": 16,
+            "fontFamily": "Segoe UI",
+            "bold": true,
+            "wordWrap": false
+          }
+        ],
+        "background": [
+          {
+            "show": false
+          }
+        ],
+        "dropShadow": [
+          {
+            "show": false
+          }
+        ],
+        "padding": [
+          {
+            "top": 0,
+            "bottom": 0,
+            "left": 0,
+            "right": 0
+          }
+        ],
+        "border": [
+          {
+            "show": false
+          }
+        ]
+      }
+    },
+    "pageNavigator": {
+      "*": {
+        "outline": [
+          {
+            "show": false
+          },
+          {
+            "$id": "default",
+            "transparency": 0,
+            "lineColor": {
+              "solid": {
+                "color": "#000000"
+              }
+            },
+            "weight": 1
+          },
+          {
+            "$id": "hover",
+            "lineColor": {
+              "solid": {
+                "color": "#000000"
+              }
+            }
+          },
+          {
+            "$id": "press",
+            "lineColor": {
+              "solid": {
+                "color": "#000000"
+              }
+            }
+          },
+          {
+            "$id": "selected",
+            "lineColor": {
+              "solid": {
+                "color": "#000000"
+              }
+            }
+          }
+        ],
+        "title": [
+          {
+            "show": false
+          }
+        ],
+        "dropShadow": [
+          {
+            "show": false
+          }
+        ],
+        "padding": [
+          {
+            "top": 0,
+            "bottom": 0,
+            "left": 0,
+            "right": 0
+          }
+        ],
+        "border": [
+          {
+            "show": false
+          }
+        ],
+        "background": [
+          {
+            "show": false
+          }
+        ],
+        "shape": [
+          {
+            "$id": "default",
+            "tileShape": "rectangle"
+          }
+        ],
+        "pages": [
+          {
+            "showHiddenPages": false,
+            "showTooltipPages": false
+          }
+        ],
+        "text": [
+          {
+            "show": true
+          },
+          {
+            "$id": "default",
+            "fontFamily": "Segoe UI",
+            "fontSize": 9,
+            "fontColor": {
+              "solid": {
+                "color": "#CCCCCC"
+              }
+            },
+            "horizontalAlignment": "center",
+            "verticalAlignment": "middle"
+          },
+          {
+            "$id": "hover",
+            "verticalAlignment": "top",
+            "fontColor": {
+              "solid": {
+                "color": "#FFFFFF"
+              }
+            }
+          },
+          {
+            "$id": "press",
+            "fontFamily": "Segoe UI Semibold",
+            "fontSize": 10,
+            "fontColor": {
+              "solid": {
+                "color": "#FFFFFF"
+              }
+            }
+          },
+          {
+            "$id": "selected",
+            "fontFamily": "Segoe UI Semibold",
+            "fontSize": 10,
+            "fontColor": {
+              "solid": {
+                "color": "#FFFFFF"
+              }
+            }
+          }
+        ],
+        "fill": [
+          {
+            "show": true
+          },
+          {
+            "$id": "default",
+            "transparency": 0,
+            "fillColor": {
+              "solid": {
+                "color": "#2E3844"
+              }
+            }
+          },
+          {
+            "$id": "hover",
+            "fillColor": {
+              "solid": {
+                "color": "#2E3844"
+              }
+            }
+          },
+          {
+            "$id": "press",
+            "fillColor": {
+              "solid": {
+                "color": "#2E3844"
+              }
+            }
+          },
+          {
+            "$id": "selected",
+            "fillColor": {
+              "solid": {
+                "color": "#586069"
+              }
+            }
+          }
+        ]
+      }
+    },
+    "actionButton": {
+      "*": {
+        "general": [
+          {
+            "responsive": true,
+            "keepLayerOrder": true
+          }
+        ],
+        "background": [
+          {
+            "show": false
+          }
+        ],
+        "title": [
+          {
+            "show": false
+          }
+        ],
+        "dropShadow": [
+          {
+            "show": false
+          }
+        ],
+        "border": [
+          {
+            "show": false
+          }
+        ],
+        "padding": [
+          {
+            "top": 0,
+            "bottom": 0,
+            "left": 0,
+            "right": 0
+          }
+        ]
+      }
+    },
+    "page": {
+      "*": {
+        "background": [
+          {
+            "image": {
+              "name": "background",
+              "scaling": "Fit",
+              "url": "data:image/png;base64,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AAAAKQjcAQAAAAAAAAAAAABIQeAOAAAAAAAAAAAAAEAKAncAAAAAAAAAAAAAAFIQuAMAAAAAAAAAAAAAkILAHQAAAAAAAAAAAACAFATuAAAAAAAAAAAAAACkIHAHAAAAAAAAAAAAACAFgTsAAAAAAAAAAAAAACkI3AEAAAAAAAAAAAAASEHgDgAAAAAAAAAAAABACgJ3AAAAAAAAAAAAAABSELgDAAAAAAAAAAAAAJCCwB0AAAAAAAAAAAAAgBQE7gAAAAAAAAAAAAAApCBwBwAAAAAAAAAAAAAgBYE7AAAAAAAAAAAAAAApCNwBAAAAAAAAAAAAAEhB4A4AAAAAAAAAAAAAQAoCdwAAAAAAAAAAAAAAUhC4AwAAAAAAAAAAAACQgsAdAAAAAAAAAAAAAIAUBO4AAAAAAAAAAAAAAKQgcAcAAAAAAAAAAAAAIAWBOwAAAAAAAAAAAAAAKQjcAQAAAAAAAAAAAABIQeAOAAAAAAAAAAAAAEAKAncAAAAAAAAAAAAAAFIQuAMAAAAAAAAAAAAAkILAHQAAAAAAAAAAAACAFATuAAAAAAAAAAAAAACkIHAHAAAAAAAAAAAAACAFgTsAAAAAAAAAAAAAACkI3AEAAAAAAAAAAAAASEHgDgAAAAAAAAAAAABACgJ3AAAAAAAAAAAAAABSELgDAAAAAAAAAAAAAJCCwB0AAAAAAAAAAAAAgBQE7gAAAAAAAAAAAAAApCBwBwAAAAAAAAAAAAAgBYE7AAAAAAAAAAAAAAApCNwBAAAAAAAAAAAAAEhB4A4AAAAAAAAAAAAAQAoCdwAAAAAAAAAAAAAAUhC4AwAAAAAAAAAAAACQgsAdAAAAAAAAAAAAAIAUBO4AAAAAAAAAAAAAAKQgcAcAAAAAAAAAAAAAIAWBOwAAAAAAAAAAAAAAKQjcAQAAAAAAAAAAAABIQeAOAAAAAAAAAAAAAEAKAncAAAAAAAAAAAAAAFIQuAMAAAAAAAAAAAAAkILAHQAAAAAAAAAAAACAFATuAAAAAAAAAAAAAACkIHAHAAAAAAAAAAAAACAFgTsAAAAAAAAAAAAAACkI3AEAAAAAAAAAAAAASEHgDgAAAAAAAAAAAABACgJ3AAAAAAAAAAAAAABSELgDAAAAAAAAAAAAAJCCwB0AAAAAAAAAAAAAgBQE7gAAAAAAAAAAAAAApCBwBwAAAAAAAAAAAAAgBYE7AAAAAAAAAAAAAAApCNwBAAAAAAAAAAAAAEhB4A4AAAAAAAAAAAAAQAoCdwAAAAAAAAAAAAAAUhC4AwAAAAAAAAAAAACQgsAdAAAAAAAAAAAAAIAUBO4AAAAAAAAAAAAAAKQgcAcAAAAAAAAAAAAAIAWBOwAAAAAAAAAAAAAAKQjcAQAAAAAAAAAAAABIQeAOAAAAAAAAAAAAAEAKd/T0/vqdAAAAAAAAAAAAAJjEfvn/fhEATH4muAMAAAAAAAAAAAAAkILAHQAAAAAAAAAAAACAFATuAAAAAAAAAAAAAACkIHAHAAAAAAAAAAAAACAFgTsAAAAAAAAAAAAAACkI3AEAAAAAAAAAAAAASEHgDgAAAAAAAAAAAABACgJ3AAAAAAAAAAAAAABSELgDAAAAAAAAAAAAAJCCwB0AAAAAAAAAAAAAgBQE7gAAAAAAAAAAAAAApCBwBwAAAAAAAAAAAAAgBYE7AAAAAAAAAAAAAAApCNwBAAAAAAAAAAAAAEhB4A4AAAAAAAAAAAAAQAoCdwAAAAAAAAAAAAAAUhC4AwAAAAAAAAAAAACQgsAdAAAAAAAAAAAAAIAUBO4AAAAAAAAAAAAAAKQgcAcAAAAAAAAAAAAAIAWBOwAAAAAAAAAAAAAAKQjcAQAAAAAAAAAAAABIQeAOAAAAAAAAAAAAAEAKAncAAAAAAAAAAAAAAFIQuAMAAAAAAAAAAAAAkILAHQAAAAAAAAAAAACAFATuAAAAAAAAAAAAAACkIHAHAAAAAAAAAAAAACAFgTsAAAAAAAAAAAAAACkI3AEAAAAAAAAAAAAASEHgDgAAAAAAAAAAAABACgJ3AAAAAAAAAAAAAABSELgDAAAAAAAAAAAAAJCCwB0AAAAAAAAAAAAAgBQE7gAAAAAAAAAAAAAApCBwBwAAAAAAAAAAAAAgBYE7AAAAAAAAAAAAAAApCNwBAAAAAAAAAAAAAEhB4A4AAAAAAAAAAAAAQAoCdwAAAAAAAAAAAAAAUhC4AwAAAAAAAAAAAACQgsAdAAAAAAAAAAAAAIAUBO4AAAAAAAAAAAAAAKQgcAcAAAAAAAAAAAAAIAWBOwAAAAAAAAAAAAAAKQjcAQAAAAAAAAAAAABIQeAOAAAAAAAAAAAAAEAKAncAAAAAAAAAAAAAAFIQuAMAAAAAAAAAAAAAkILAHQAAAAAAAAAAAACAFATuAAAAAAAAAAAAAACkIHAHAAAAAAAAAAAAACAFgTsAAAAAAAAAAAAAACkI3AEAAAAAAAAAAAAASEHgDgAAAAAAAAAAAABACgJ3AAAAAAAAAAAAAABSELgDAAAAAAAAAAAAAJCCwB0AAAAAAAAAAAAAgBQE7gAAAAAAAAAAAAAApCBwBwAAAAAAAAAAAAAgBYE7AAAAAAAAAAAAAAApCNwBAAAAAAAAAAAAAEhB4A4AAAAAAAAAAAAAQAoCdwAAAAAAAAAAAAAAUhC4AwAAAAAAAAAAAACQgsAdAAAAAAAAAAAAAIAUBO4AAAAAAAAAAAAAAKQgcAcAAAAAAAAAAAAAIAWBOwAAAAAAAAAAAAAAKQjcAQAAAAAAAAAAAABIQeAOAAAAAAAAAAAAAEAKAncAAAAAAAAAAAAAAFIQuAMAAAAAAAAAAAAAkILAHQAAAAAAAAAAAACAFATuAAAAAAAAAAAAAACkIHAHAAAAAAAAAAAAACAFgTsAAAAAAAAAAAAAACkI3AEAAAAAAAAAAAAASEHgDgAAAAAAAAAAAABACgJ3AAAAAAAAAAAAAABSELgDAAAAAAAAAAAAAJCCwB0AAAAAAAAAAAAAgBQE7gAAAAAAAAAAAAAApCBwBwAAAAAAAAAAAAAgBYE7AAAAAAAAAAAAAAApCNwBAAAAAAAAAAAAAEhB4A4AAAAAAAAAAAAAQAoCdwAAAAAAAAAAAAAAUhC4AwAAAAAAAAAAAACQgsAdAAAAAAAAAAAAAIAUBO4AAAAAAAAAAAAAAKQgcAcAAAAAAAAAAAAAIAWBOwAAAAAAAAAAAAAAKQjcAQAAAAAAAAAAAABIQeAOAAAAAAAAAAAAAEAKAncAAAAAAAAAAAAAAFIQuAMAAAAAAAAAAAAAkILAHQAAAAAAAAAAAACAFATuAAAAAAAAAAAAAACkIHAHAAAAAAAAAAAAACAFgTsAAAAAAAAAAAAAACkI3AEAAAAAAAAAAAAASEHgDgAAAAAAAAAAAABACgJ3AAAAAAAAAAAAAABSELgDAAAAAAAAAAAAAJCCwB0AAAAAAAAAAAAAgBQE7gAAAAAAAAAAAAAApCBwBwAAAAAAAAAAAAAgBYE7AAAAAAAAAAAAAAApCNwBAAAAAAAAAAAAAEhB4A4AAAAAAAAAAAAAQAoCdwAAAAAAAAAAAAAAUhC4AwAAAAAAAAAAAACQgsAdAAAAAAAAAAAAAIAUBO4AAAAAAAAAAAAAAKQgcAcAAAAAAAAAAAAAIAWBOwAAAAAAAAAAAAAAKQjcAQAAAAAAAAAAAABIQeAOAAAAAAAAAAAAAEAKAncAAAAAAAAAAAAAAFIQuAMAAAAAAAAAAAAAkILAHQAAAAAAAAAAAACAFATuAAAAAAAAAAAAAACkIHAHAAAAAAAAAAAAACAFgTsAAAAAAAAAAAAAACkI3AEAAAAAAAAAAAAASEHgDgAAAAAAAAAAAABACgJ3AAAAAAAAAAAAAABSELgDAAAAAAAAAAAAAJCCwB0AAAAAAAAAAAAAgBQE7gAAAAAAAAAAAAAApCBwBwAAAAAAAAAAAAAgBYE7AAAAAAAAAAAAAAApCNwBAAAAAAAAAAAAAEhB4A4AAAAAAAAAAAAAQAoCdwAAAAAAAAAAAAAAUhC4AwAAAAAAAAAAAACQgsAdAAAAAAAAAAAAAIAUBO4AAAAAAAAAAAAAAKQgcAcAAAAAAAAAAAAAIAWBOwAAAAAAAAAAAAAAKQjcAQAAAAAAAAAAAABIQeAOAAAAAAAAAAAAAEAKAncAAAAAAAAAAAAAAFIQuAMAAAAAAAAAAAAAkILAHQAAAAAAAAAAAACAFATuAAAAAAAAAAAAAACkIHAHAAAAAAAAAAAAACAFgTsAAAAAAAAAAAAAACkI3AEAAAAAAAAAAAAASEHgDgAAAAAAAAAAAABACgJ3AAAAAAAAAAAAAABSELgDAAAAAAAAAAAAAJCCwB0AAAAAAAAAAAAAgBQE7gAAAAAAAAAAAAAApCBwBwAAAAAAAAAAAAAgBYE7AAAAAAAAAAAAAAApCNwBAAAAAAAAAAAAAEhB4A4AAAAAAAAAAAAAQAoCdwAAAAAAAAAAAAAAUhC4AwAAAAAAAAAAAACQgsAdAAAAAAAAAAAAAIAUBO4AAAAAAAAAAAAAAKQgcAcAAAAAAAAAAAAAIAWBOwAAAAAAAAAAAAAAKQjcAQAAAAAAAAAAAABIQeAOAAAAAAAAAAAAAEAKAncAAAAAAAAAAAAAAFIQuAMAAAAAAAAAAAAAkILAHQAAAAAAAAAAAACAFATuAAAAAAAAAAAAAACkIHAHAAAAAAAAAAAAACAFgTsAAAAAAAAAAAAAACkI3AEAAAAAAAAAAAAASEHgDgAAAAAAAAAAAABACgJ3AAAAAAAAAAAAAABSELgDAAAAAAAAAAAAAJCCwB0AAAAAAAAAAAAAgBQE7gAAAAAAAAAAAAAApCBwBwAAAAAAAAAAAAAgBYE7AAAAAAAAAAAAAAApCNwBAAAAAAAAAAAAAEhB4A4AAAAAAAAAAAAAQAoCdwAAAAAAAAAAAAAAUhC4AwAAAAAAAAAAAACQgsAdAAAAAAAAAAAAAIAUBO4AAAAAAAAAAAAAAKQgcAcAAAAAAAAAAAAAIAWBOwAAAAAAAAAAAAAAKQjcAQAAAAAAAAAAAABIQeAOAAAAAAAAAAAAAEAKAncAAAAAAAAAAAAAAFIQuAMAAAAAAAAAAAAAkILAHQAAAAAAAAAAAACAFATuAAAAAAAAAAAAAACkIHAHAAAAAAAAAAAAACAFgTsAAAAAAAAAAAAAACkI3AEAAAAAAAAAAAAASEHgDgAAAAAAAAAAAABACgJ3AAAAAAAAAAAAAABSELgDAAAAAAAAAAAAAJCCwB0AAAAAAAAAAAAAgBQE7gAAAAAAAAAAAAAApCBwBwAAAAAAAAAAAAAgBYE7AAAAAAAAAAAAAAApCNwBAAAAAAAAAAAAAEhB4A4AAAAAAAAAAAAAQAoCdwAAAAAAAAAAAAAAUhC4AwAAAAAAAAAAAACQgsAdAAAAAAAAAAAAAIAUBO4AAAAAAAAAAAAAAKQgcAcAAAAAAAAAAAAAIAWBOwAAAAAAAAAAAP+fXTsWAAAAABjkbz2NHcURAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAADAguAOAAAAAAAAAAAAAMCC4A4AAAAAAAAAAAAAwILgDgAAAAAAAAAAAAAQu3YsAAAAADDI33oaO4ojFgR3AAAAAAAAAAAAAAAWBHcAAAAAAAAAAAAAABYEdwAAAAAAAAAAAAAAFgR3AAAAAAAAAAAAAAAWBHcAAAAAAAAAAAAAABYEdwAAAAAAAAAAAAAAFgR3AAAAAAAAAAAAAAAWBHcAAAAAAAAAAAAAABYEdwAAAAAAAAAAAAAAFgR3AAAAAAAAAAAAAAAWBHcAAAAAAAAAAAAAABYEdwAAAAAAAAAAAAAAFgR3AAAAAAAAAAAAAAAWBHcAAAAAAAAAAAAAABYEdwAAAAAAAAAAAAAAFgR3AAAAAAAAAAAAAAAWBHcAAAAAAAAAAAAAABYEdwAAAAAAAAAAAAAAFgR3AAAAAAAAAAAAAAAWBHcAAAAAAAAAAAAAABYEdwAAAAAAAAAAAAAAFgR3AAAAAAAAAAAAAAAWBHcAAAAAAAAAAAAAABYEdwAAAAAAAAAAAAAAFgR3AAAAAAAAAAAAAAAWBHcAAAAAAAAAAAAAABYEdwAAAAAAAAAAAAAAFgR3AAAAAAAAAAAAAAAWBHcAAAAAAAAAAAAAABYEdwAAAAAAAAAAAAAAFgR3AAAAAAAAAAAAAAAWBHcAAAAAAAAAAAAAABYEdwAAAAAAAAAAAAAAFgR3AAAAAAAAAAAAAAAWBHcAAAAAAAAAAAAAABYEdwAAAAAAAAAAAAAAFgR3AAAAAAAAAAAAAAAWBHcAAAAAAAAAAAAAABYEdwAAAAAAAAAAAAAAFgR3AAAAAAAAAAAAAAAWBHcAAAAAAAAAAAAAABYEdwAAAAAAAAAAAAAAFgR3AAAAAAAAAAAAAAAWBHcAAAAAAAAAAAAAABYEdwAAAAAAAAAAAAAAFgR3AAAAAAAAAAAAAAAWBHcAAAAAAAAAAAAAABYEdwAAAAAAAAAAAAAAFgR3AAAAAAAAAAAAAAAWBHcAAAAAAAAAAAAAABYEdwAAAAAAAAAAAAAAFgR3AAAAAAAAAAAAAAAWBHcAAAAAAAAAAAAAABYEdwAAAAAAAAAAAAAAFgR3AAAAAAAAAAAAAAAWBHcAAAAAAAAAAAAAABYEdwAAAAAAAAAAAAAAFgR3AAAAAAAAAAAAAAAWBHcAAAAAAAAAAAAAABYEdwAAAAAAAAAAAAAAFgR3AAAAAAAAAAAAAAAWBHcAAAAAAAAAAAAAABYEdwAAAAAAAAAAAAAAFgR3AAAAAAAAAAAAAAAWBHcAAAAAAAAAAAAAABYEdwAAAAAAAAAAAAAAFgR3AAAAAAAAAAAAAAAWBHcAAAAAAAAAAAAAABYEdwAAAAAAAAAAAAAAFgR3AAAAAAAAAAAAAAAWBHcAAAAAAAAAAAAAABYEdwAAAAAAAAAAAAAAFgR3AAAAAAAAAAAAAAAWBHcAAAAAAAAAAAAAABYEdwAAAAAAAAAAAAAAFgR3AAAAAAAAAAAAAAAWBHcAAAAAAAAAAAAAABYEdwAAAAAAAAAAAAAAFgR3AAAAAAAAAAAAAAAWBHcAAAAAAAAAAAAAABYEdwAAAAAAAAAAAAAAFgR3AAAAAAAAAAAAAAAWBHcAAAAAAAAAAAAAABYEdwAAAAAAAAAAAAAAFgR3AAAAAAAAAAAAAAAWBHcAAAAAAAAAAAAAABYEdwAAAAAAAAAAAAAAFgR3AAAAAAAAAAAAAAAWBHcAAAAAAAAAAAAAABYEdwAAAAAAAAAAAAAAFgR3AAAAAAAAAAAAAAAWBHcAAAAAAAAAAAAAABYEdwAAAAAAAAAAAAAAFgR3AAAAAAAAAAAAAAAWBHcAAAAAAAAAAAAAABYEdwAAAAAAAAAAAAAAFgR3AAAAAAAAAAAAAAAWBHcAAAAAAAAAAAAAABYEdwAAAAAAAAAAAAAAFgR3AAAAAAAAAAAAAAAWBHcAAAAAAAAAAAAAABYEdwAAAAAAAAAAAAAAFgR3AAAAAAAAAAAAAAAWBHcAAAAAAAAAAAAAABYEdwAAAAAAAAAAAAAAFgR3AAAAAAAAAAAAAAAWBHcAAAAAAAAAAAAAABYEdwAAAAAAAAAAAAAAFgR3AAAAAAAAAAAAAAAWBHcAAAAAAAAAAAAAABYEdwAAAAAAAAAAAAAAFgR3AAAAAAAAAAAAAAAWBHcAAAAAAAAAAAAAABYEdwAAAAAAAAAAAAAAFgR3AAAAAAAAAAAAAAAWBHcAAAAAAAAAAAAAABYEdwAAAAAAAAAAAAAAFgR3AAAAAAAAAAAAAAAWBHcAAAAAAAAAAAAAABYEdwAAAAAAAAAAAAAAFgR3AAAAAAAAAAAAAAAWBHcAAAAAAAAAAAAAABYEdwAAAAAAAAAAAAAAFgR3AAAAAAAAAAAAAAAWBHcAAAAAAAAAAAAAABYEdwAAAAAAAAAAAAAAFgR3AAAAAAAAAAAAAAAWBHcAAAAAAAAAAAAAABYEdwAAAAAAAAAAAAAAFgR3AAAAAAAAAAAAAAAWBHcAAAAAAAAAAAAAABYEdwAAAAAAAAAAAAAAFgR3AAAAAAAAAAAAAAAWBHcAAAAAAAAAAAAAABYEdwAAAAAAAAAAAAAAFgR3AAAAAAAAAAAAAAAWBHcAAAAAAAAAAAAAABYEdwAAAAAAAAAAAAAAFgR3AAAAAAAAAAAAAAAWBHcAAAAAAAAAAAAAABYEdwAAAAAAAAAAAAAAFgR3AAAAAAAAAAAAAAAWBHcAAAAAAAAAAAAAABYEdwAAAAAAAAAAAAAAFgR3AAAAAAAAAAAAAAAWBHcAAAAAAAAAAAAAABYEdwAAAAAAAAAAAAAAFgR3AAAAAAAAAAAAAAAWBHcAAAAAAAAAAAAAABYEdwAAAAAAAAAAAAAAFgR3AAAAAAAAAAAAAAAWBHcAAAAAAAAAAAAAABYEdwAAAAAAAAAAAAAAFgR3AAAAAAAAAAAAAAAWBHcAAAAAAAAAAAAAABYEdwAAAAAAAAAAAAAAFgR3AAAAAAAAAAAAAAAWBHcAAAAAAAAAAAAAABYEdwAAAAAAAAAAAAAAFgR3AAAAAAAAAAAAAAAWBHcAAAAAAAAAAAAAABYEdwAAAAAAAAAAAAAAFgR3AAAAAAAAAAAAAAAWBHcAAAAAAAAAAAAAABYEdwAAAAAAAAAAAAAAFgR3AAAAAAAAAAAAAAAWBHcAAAAAAAAAAAAAABYEdwAAAAAAAAAAAAAAFgR3AAAAAAAAAAAAAAAWBHcAAAAAAAAAAAAAABYEdwAAAAAAAAAAAAAAFgR3AAAAAAAAAAAAAAAWBHcAAAAAAAAAAAAAABYEdwAAAAAAAAAAAAAAFgR3AAAAAAAAAAAAAAAWBHcAAAAAAAAAAAAAABYEdwAAAAAAAAAAAAAAFgR3AAAAAAAAAAAAAAAWBHcAAAAAAAAAAAAAABYEdwAAAAAAAAAAAAAAFgR3AAAAAAAAAAAAAAAWBHcAAAAAAAAAAAAAABYEdwAAAAAAAAAAAAAAFgR3AAAAAAAAAAAAAAAWBHcAAAAAAAAAAAAAABYEdwAAAAAAAAAAAAAAFgR3AAAAAAAAAAAAAAAWBHcAAAAAAAAAAAAAABYEdwAAAAAAAAAAAAAAFgR3AAAAAAAAAAAAAAAWBHcAAAAAAAAAAAAAABYEdwAAAAAAAAAAAAAAFgR3AAAAAAAAAAAAAAAWBHcAAAAAAAAAAAAAABYEdwAAAAAAAAAAAAAAFgR3AAAAAAAAAAAAAAAWBHcAAAAAAAAAAAAAABYEdwAAAAAAAAAAAAAAFgR3AAAAAAAAAAAAAAAWBHcAAAAAAAAAAAAAABYEdwAAAAAAAAAAAAAAFgR3AAAAAAAAAAAAAAAWBHcAAAAAAAAAAAAAABYEdwAAAAAAAAAAAAAAFgR3AAAAAAAAAAAAAAAWBHcAAAAAAAAAAAAAABYEdwAAAAAAAAAAAAAAFgR3AAAAAAAAAAAAAAAWBHcAAAAAAAAAAAAAABYEdwAAAAAAAAAAAAAAFgR3AAAAAAAAAAAAAAAWBHcAAAAAAAAAAAAAABYEdwAAAAAAAAAAAAAAFgR3AAAAAAAAAAAAAAAWBHcAAAAAAAAAAAAAABYEdwAAAAAAAAAAAAAAFgR3AAAAAAAAAAAAAAAWBHcAAAAAAAAAAAAAABYEdwAAAAAAAAAAAAAAFgR3AAAAAAAAAAAAAAAWBHcAAAAAAAAAAAAAABYEdwAAAAAAAAAAAAAAFgR3AAAAAAAAAAAAAAAWBHcAAAAAAAAAAAAAABYEdwAAAAAAAAAAAAAAFgR3AAAAAAAAAAAAAAAWBHcAAAAAAAAAAAAAABYEdwAAAAAAAAAAAAAAFgR3AAAAAAAAAAAAAAAWBHcAAAAAAAAAAAAAABYEdwAAAAAAAAAAAAAAFgR3AAAAAAAAAAAAAAAWBHcAAAAAAAAAAAAAABYEdwAAAAAAAAAAAAAAFgR3AAAAAAAAAAAAAAAWBHcAAAAAAAAAAAAAABYEdwAAAAAAAAAAAAAAFgR3AAAAAAAAAAAAAAAWBHcAAAAAAAAAAAAAABYEdwAAAAAAAAAAAAAAFgR3AAAAAAAAAAAAAAAWBHcAAAAAAAAAAAAAABYEdwAAAAAAAAAAAAAAFgR3AAAAAAAAAAAAAAAWBHcAAAAAAAAAAAAAABYEdwAAAAAAAAAAAAAAFgR3AAAAAAAAAAAAAAAWBHcAAAAAAAAAAAAAABYEdwAAAAAAAAAAAAAAFgR3AAAAAAAAAAAAAAAWBHcAAAAAAAAAAAAAABYEdwAAAAAAAAAAAAAAFgR3AAAAAAAAAAAAAAAWBHcAAAAAAAAAAAAAABYEdwAAAAAAAAAAAAAAFgR3AAAAAAAAAAAAAAAWBHcAAAAAAAAAAAAAABYEdwAAAAAAAAAAAAAAFgR3AAAAAAAAAAAAAAAWBHcAAAAAAAAAAAAAABYEdwAAAAAAAAAAAAAAFgR3AAAAAAAAAAAAAAAWBHcAAAAAAAAAAAAAABYEdwAAAAAAAAAAAAAAFgR3AAAAAAAAAAAAAAAWBHcAAAAAAAAAAAAAABYEdwAAAAAAAAAAAAAAFgR3AAAAAAAAAAAAAAAWBHcAAAAAAAAAAAAAABYEdwAAAAAAAAAAAAAAFgR3AAAAAAAAAAAAAAAWBHcAAAAAAAAAAAAAABYEdwAAAAAAAAAAAAAAFgR3AAAAAAAAAAAAAAAWBHcAAAAAAAAAAAAAABYEdwAAAAAAAAAAAAAAFgR3AAAAAAAAAAAAAAAWBHcAAAAAAAAAAAAAABYEdwAAAAAAAAAAAAAAFgR3AAAAAAAAAAAAAAAWBHcAAAAAAAAAAAAAABYEdwAAAAAAAAAAAAAAFgR3AAAAAAAAAAAAAAAWBHcAAAAAAAAAAAAAABYEdwAAAAAAAAAAAAAAFgR3AAAAAAAAAAAAAAAWBHcAAAAAAAAAAAAAABYEdwAAAAAAAAAAAAAAFgR3AAAAAAAAAAAAAAAWBHcAAAAAAAAAAAAAABYEdwAAAAAAAAAAAAAAFgR3AAAAAAAAAAAAAAAWBHcAAAAAAAAAAAAAABYEdwAAAAAAAAAAAAAAFgR3AAAAAAAAAAAAAAAWBHcAAAAAAAAAAAAAABYEdwAAAAAAAAAAAAAAFgR3AAAAAAAAAAAAAAAWBHcAAAAAAAAAAAAAABYEdwAAAAAAAAAAAAAAFgR3AAAAAAAAAAAAAAAWBHcAAAAAAAAAAAAAABYEdwAAAAAAAAAAAAAAFgR3AAAAAAAAAAAAAAAWBHcAAAAAAAAAAAAAABYEdwAAAAAAAAAAAAAAFgR3AAAAAAAAAAAAAAAWBHcAAAAAAAAAAAAAABYEdwAAAAAAAAAAAAAAFgR3AAAAAAAAAAAAAAAWBHcAAAAAAAAAAAAAABYEdwAAAAAAAAAAAAAAFgR3AAAAAAAAAAAAAAAWBHcAAAAAAAAAAAAAABYEdwAAAAAAAAAAAAAAFgR3AAAAAAAAAAAAAAAWBHcAAAAAAAAAAAAAABYEdwAAAAAAAAAAAAAAFgR3AAAAAAAAAAAAAAAWBHcAAAAAAAAAAAAAABYEdwAAAAAAAAAAAAAAFgR3AAAAAAAAAAAAAAAWBHcAAAAAAAAAAAAAABYEdwAAAAAAAAAAAAAAFgR3AAAAAAAAAAAAAAAWBHcAAAAAAAAAAAAAABYEdwAAAAAAAAAAAAAAFgR3AAAAAAAAAAAAAAAWBHcAAAAAAAAAAAAAABYEdwAAAAAAAAAAAAAAFgR3AAAAAAAAAAAAAAAWBHcAAAAAAAAAAAAAABYEdwAAAAAAAAAAAAAAFgR3AAAAAAAAAAAAAAAWBHcAAAAAAAAAAAAAABYEdwAAAAAAAAAAAAAAFgR3AAAAAAAAAAAAAAAWBHcAAAAAAAAAAAAAABYEdwAAAAAAAAAAAAAAFgR3AAAAAAAAAAAAAAAWBHcAAAAAAAAAAAAAABYEdwAAAAAAAAAAAAAAFgR3AAAAAAAAAAAAAAAWBHcAAAAAAAAAAAAAABYEdwAAAAAAAAAAAAAAFgR3AAAAAAAAAAAAAAAWBHcAAAAAAAAAAAAAABYEdwAAAAAAAAAAAAAAFgR3AAAAAAAAAAAAAAAWBHcAAAAAAAAAAAAAABYEdwAAAAAAAAAAAAAAFgR3AAAAAAAAAAAAAAAWBHcAAAAAAAAAAAAAABYEdwAAAAAAAAAAAAAAFgR3AAAAAAAAAAAAAAAWBHcAAAAAAAAAAAAAABYEdwAAAAAAAAAAAAAAFgR3AAAAAAAAAAAAAAAWBHcAAAAAAAAAAAAAABYEdwAAAAAAAAAAAAAAFgR3AAAAAAAAAAAAAAAWBHcAAAAAAAAAAAAAABYEdwAAAAAAAAAAAAAAFgR3AAAAAAAAAAAAAAAWBHcAAAAAAAAAAAAAABYEdwAAAAAAAAAAAAAAFgR3AAAAAAAAAAAAAAAWBHcAAAAAAAAAAAAAABYEdwAAAAAAAAAAAAAAFgR3AAAAAAAAAAAAAAAWBHcAAAAAAAAAAAAAABYEdwAAAAAAAAAAAAAAFgR3AAAAAAAAAAAAAAAWBHcAAAAAAAAAAAAAABYEdwAAAAAAAAAAAAAAFgR3AAAAAAAAAAAAAAAWBHcAAAAAAAAAAAAAABYEdwAAAAAAAAAAAAAAFgR3AAAAAAAAAAAAAAAWBHcAAAAAAAAAAAAAABYEdwAAAAAAAAAAAAAAFgR3AAAAAAAAAAAAAAAWBHcAAAAAAAAAAAAAABYEdwAAAAAAAAAAAAAAFgR3AAAAAAAAAAAAAAAWBHcAAAAAAAAAAAAAABYEdwAAAAAAAAAAAAAAFgR3AAAAAAAAAAAAAAAWBHcAAAAAAAAAAAAAABYEdwAAAAAAAAAAAAAAFgR3AAAAAAAAAAAAAAAWBHcAAAAAAAAAAAAAABYEdwAAAAAAAAAAAAAAFgR3AAAAAAAAAAAAAAAWBHcAAAAAAAAAAAAAABYEdwAAAAAAAAAAAAAAFgR3AAAAAAAAAAAAAAAWBHcAAAAAAAAAAAAAABYEdwAAAAAAAAAAAAAAFgR3AAAAAAAAAAAAAAAWBHcAAAAAAAAAAAAAABYEdwAAAAAAAAAAAAAAFgR3AAAAAAAAAAAAAAAWBHcAAAAAAAAAAAAAABYEdwAAAAAAAAAAAAAAFgR3AAAAAAAAAAAAAAAWBHcAAAAAAAAAAAAAABYEdwAAAAAAAAAAAAAAFgR3AAAAAAAAAAAAAAAWBHcAAAAAAAAAAAAAABYEdwAAAAAAAAAAAAAAFgR3AAAAAAAAAAAAAAAWBHcAAAAAAAAAAAAAABYEdwAAAAAAAAAAAAAAFgR3AAAAAAAAAAAAAAAWBHcAAAAAAAAAAAAAABYEdwAAAAAAAAAAAAAAFgR3AAAAAAAAAAAAAAAWBHcAAAAAAAAAAAAAABYEdwAAAAAAAAAAAAAAFgR3AAAAAAAAAAAAAAAWBHcAAAAAAAAAAAAAABYEdwAAAAAAAAAAAAAAFgR3AAAAAAAAAAAAAAAWBHcAAAAAAAAAAAAAABYEdwAAAAAAAAAAAAAAFgR3AAAAAAAAAAAAAAAWBHcAAAAAAAAAAAAAABYEdwAAAAAAAAAAAAAAFgR3AAAAAAAAAAAAAAAWBHcAAAAAAAAAAAAAABYEdwAAAAAAAAAAAAAAFgR3AAAAAAAAAAAAAAAWBHcAAAAAAAAAAAAAABYEdwAAAAAAAAAAAAAAFgR3AAAAAAAAAAAAAAAWBHcAAAAAAAAAAAAAABYEdwAAAAAAAAAAAAAAFgR3AAAAAAAAAAAAAAAWBHcAAAAAAAAAAAAAABYEdwAAAAAAAAAAAAAAFgR3AAAAAAAAAAAAAAAWBHcAAAAAAAAAAAAAABYEdwAAAAAAAAAAAAAAFgR3AAAAAAAAAAAAAAAWBHcAAAAAAAAAAAAAABYEd4DatWMCAAAAhEH2T22NHZADAAAAAAAAAAAAABIEdwAAAAAAAAAAAAAAEgR3AAAAAAAAAAAAAAASBHcAAAAAAAAAAAAAABIEdwAAAAAAAAAAAAAAEgR3AAAAAAAAAAAAAAASBHcAAAAAAAAAAAAAABIEdwAAAAAAAAAAAAAAEgR3AAAAAAAAAAAAAAASBHcAAAAAAAAAAAAAABIEdwAAAAAAAAAAAAAAEgR3AAAAAAAAAAAAAAASBHcAAAAAAAAAAAAAABIEdwAAAAAAAAAAAAAAEgR3AAAAAAAAAAAAAAASBHcAAAAAAAAAAAAAABIEdwAAAAAAAAAAAAAAEgR3AAAAAAAAAAAAAAASBHcAAAAAAAAAAAAAABIEdwAAAAAAAAAAAAAAEgR3AAAAAAAAAAAAAAASBHcAAAAAAAAAAAAAABIEdwAAAAAAAAAAAAAAEgR3AAAAAAAAAAAAAAASBHcAAAAAAAAAAAAAABIEdwAAAAAAAAAAAAAAEgR3AAAAAAAAAAAAAAASBHcAAAAAAAAAAAAAABIEdwAAAAAAAAAAAAAAEgR3AAAAAAAAAAAAAAASBHcAAAAAAAAAAAAAABIEdwAAAAAAAAAAAAAAEgR3AAAAAAAAAAAAAAASBHcAAAAAAAAAAAAAABIEdwAAAAAAAAAAAAAAEgR3AAAAAAAAAAAAAAASBHcAAAAAAAAAAAAAABIEdwAAAAAAAAAAAAAAEgR3AAAAAAAAAAAAAAASBHcAAAAAAAAAAAAAABIEdwAAAAAAAAAAAAAAEgR3AAAAAAAAAAAAAAASBHcAAAAAAAAAAAAAABIEdwAAAAAAAAAAAAAAEgR3AAAAAAAAAAAAAAASBHcAAAAAAAAAAAAAABIEdwAAAAAAAAAAAAAAEgR3AAAAAAAAAAAAAAASBHcAAAAAAAAAAAAAABIEdwAAAAAAAAAAAAAAEgR3AAAAAAAAAAAAAAASBHcAAAAAAAAAAAAAABIEdwAAAAAAAAAAAAAAEgR3AAAAAAAAAAAAAAASBHcAAAAAAAAAAAAAABIEdwAAAAAAAAAAAAAAEgR3AAAAAAAAAAAAAAASBHcAAAAAAAAAAAAAABIEdwAAAAAAAAAAAAAAEgR3AAAAAAAAAAAAAAASBHcAAAAAAAAAAAAAABIEdwAAAAAAAAAAAAAAEgR3AAAAAAAAAAAAAAASBHcAAAAAAAAAAAAAABIEdwAAAAAAAAAAAAAAEgR3AAAAAAAAAAAAAAASBHcAAAAAAAAAAAAAABIEdwAAAAAAAAAAAAAAEgR3AAAAAAAAAAAAAAASBHcAAAAAAAAAAAAAABIEdwAAAAAAAAAAAAAAEgR3AAAAAAAAAAAAAAASBHcAAAAAAAAAAAAAABIEdwAAAAAAAAAAAAAAEgR3AAAAAAAAAAAAAAASBHcAAAAAAAAAAAAAABIEdwAAAAAAAAAAAAAAEgR3AAAAAAAAAAAAAAASBHcAAAAAAAAAAAAAABIEdwAAAAAAAAAAAAAAEgR3AAAAAAAAAAAAAAASBHcAAAAAAAAAAAAAABIEdwAAAAAAAAAAAAAAEgR3AAAAAAAAAAAAAAASBHcAAAAAAAAAAAAAABIEdwAAAAAAAAAAAAAAEgR3AAAAAAAAAAAAAAASBHcAAAAAAAAAAAAAABIEdwAAAAAAAAAAAAAAEgR3AAAAAAAAAAAAAAASBHcAAAAAAAAAAAAAABIEdwAAAAAAAAAAAAAAEgR3AAAAAAAAAAAAAAASBHcAAAAAAAAAAAAAABIEdwAAAAAAAAAAAAAAEgR3AAAAAAAAAAAAAAASBHcAAAAAAAAAAAAAABIEdwAAAAAAAAAAAAAAEgR3AAAAAAAAAAAAAAASBHcAAAAAAAAAAAAAABIEdwAAAAAAAAAAAAAAEgR3AAAAAAAAAAAAAAASBHcAAAAAAAAAAAAAABIEdwAAAAAAAAAAAAAAEgR3AAAAAAAAAAAAAAASBHcAAAAAAAAAAAAAABIEdwAAAAAAAAAAAAAAEgR3AAAAAAAAAAAAAAASBHcAAAAAAAAAAAAAABIEdwAAAAAAAAAAAAAAEgR3AAAAAAAAAAAAAAASBHcAAAAAAAAAAAAAABIEdwAAAAAAAAAAAAAAEgR3AAAAAAAAAAAAAAASBHcAAAAAAAAAAAAAABIEdwAAAAAAAAAAAAAAEgR3AAAAAAAAAAAAAAASBHcAAAAAAAAAAAAAABIEdwAAAAAAAAAAAAAAEgR3AAAAAAAAAAAAAAASBHcAAAAAAAAAAAAAABIEdwAAAAAAAAAAAAAAEgR3AAAAAAAAAAAAAAASBHcAAAAAAAAAAAAAABIEdwAAAAAAAAAAAAAAEgR3AAAAAAAAAAAAAAASBHcAAAAAAAAAAAAAABIEdwAAAAAAAAAAAAAAEgR3AAAAAAAAAAAAAAASBHcAAAAAAAAAAAAAABIEdwAAAAAAAAAAAAAAEgR3AAAAAAAAAAAAAAASBHcAAAAAAAAAAAAAABIEdwAAAAAAAAAAAAAAEgR3AAAAAAAAAAAAAAASBHcAAAAAAAAAAAAAABIEdwAAAAAAAAAAAAAAEgR3AAAAAAAAAAAAAAASBHcAAAAAAAAAAAAAABIEdwAAAAAAAAAAAAAAEgR3AAAAAAAAAAAAAAASBHcAAAAAAAAAAAAAABIEdwAAAAAAAAAAAAAAEgR3AAAAAAAAAAAAAAASBHcAAAAAAAAAAAAAABIEdwAAAAAAAAAAAAAAEgR3AAAAAAAAAAAAAAASBHcAAAAAAAAAAAAAABIEdwAAAAAAAAAAAAAAEgR3AAAAAAAAAAAAAAASBHcAAAAAAAAAAAAAABIEdwAAAAAAAAAAAAAAEgR3AAAAAAAAAAAAAAASBHcAAAAAAAAAAAAAABIEdwAAAAAAAAAAAAAAEgR3AAAAAAAAAAAAAAASBHcAAAAAAAAAAAAAABIEdwAAAAAAAAAAAAAAEgR3AAAAAAAAAAAAAAASBHcAAAAAAAAAAAAAABIEdwAAAAAAAAAAAAAAEgR3AAAAAAAAAAAAAAASBHcAAAAAAAAAAAAAABIEdwAAAAAAAAAAAAAAEgR3AAAAAAAAAAAAAAASBHcAAAAAAAAAAAAAABIEdwAAAAAAAAAAAAAAEgR3AAAAAAAAAAAAAAASBHcAAAAAAAAAAAAAABIEdwAAAAAAAAAAAAAAEgR3AAAAAAAAAAAAAAASBHcAAAAAAAAAAAAAABIEdwAAAAAAAAAAAAAAEgR3AAAAAAAAAAAAAAASBHcAAAAAAAAAAAAAABIEdwAAAAAAAAAAAAAAEgR3AAAAAAAAAAAAAAASBHcAAAAAAAAAAAAAABIEdwAAAAAAAAAAAAAAEgR3AAAAAAAAAAAAAAASBHcAAAAAAAAAAAAAABIEdwAAAAAAAAAAAAAAEgR3AAAAAAAAAAAAAAASBHcAAAAAAAAAAAAAABIEdwAAAAAAAAAAAAAAEgR3AAAAAAAAAAAAAAASBHcAAAAAAAAAAAAAABIEdwAAAAAAAAAAAAAAEgR3AAAAAAAAAAAAAAASBHcAAAAAAAAAAAAAABIEdwAAAAAAAAAAAAAAEgR3AAAAAAAAAAAAAAASBHcAAAAAAAAAAAAAABIEdwAAAAAAAAAAAAAAEgR3AAAAAAAAAAAAAAASBHcAAAAAAAAAAAAAABIEdwAAAAAAAAAAAAAAEgR3AAAAAAAAAAAAAAASBHcAAAAAAAAAAAAAABIEdwAAAAAAAAAAAAAAEgR3AAAAAAAAAAAAAAASBHcAAAAAAAAAAAAAABIEdwAAAAAAAAAAAAAAEgR3AAAAAAAAAAAAAAASBHcAAAAAAAAAAAAAABIEdwAAAAAAAAAAAAAAEgR3AAAAAAAAAAAAAAASBHcAAAAAAAAAAAAAABIEdwAAAAAAAAAAAAAAEgR3AAAAAAAAAAAAAAASBHcAAAAAAAAAAAAAABIEdwAAAAAAAAAAAAAAEgR3AAAAAAAAAAAAAAASBHcAAAAAAAAAAAAAABIEdwAAAAAAAAAAAAAAEgR3AAAAAAAAAAAAAAASBHcAAAAAAAAAAAAAABIEdwAAAAAAAAAAAAAAEgR3AAAAAAAAAAAAAAASBHcAAAAAAAAAAAAAABIEdwAAAAAAAAAAAAAAEgR3AAAAAAAAAAAAAAASBHcAAAAAAAAAAAAAABIEdwAAAAAAAAAAAAAAEgR3AAAAAAAAAAAAAAASBHcAAAAAAAAAAAAAABIEdwAAAAAAAAAAAAAAEgR3AAAAAAAAAAAAAAASBHcAAAAAAAAAAAAAABIEdwAAAAAAAAAAAAAAEgR3AAAAAAAAAAAAAAASBHcAAAAAAAAAAAAAABIEdwAAAAAAAAAAAAAAEgR3AAAAAAAAAAAAAAASBHcAAAAAAAAAAAAAABIEdwAAAAAAAAAAAAAAEgR3AAAAAAAAAAAAAAASBHcAAAAAAAAAAAAAABIEdwAAAAAAAAAAAAAAEgR3AAAAAAAAAAAAAAASBHcAAAAAAAAAAAAAABIEdwAAAAAAAAAAAAAAEgR3AAAAAAAAAAAAAAASBHcAAAAAAAAAAAAAABIEdwAAAAAAAAAAAAAAEgR3AAAAAAAAAAAAAAASBHcAAAAAAAAAAAAAABIEdwAAAAAAAAAAAAAAEgR3AAAAAAAAAAAAAAASBHcAAAAAAAAAAAAAABIEdwAAAAAAAAAAAAAAEgR3AAAAAAAAAAAAAAASBHcAAAAAAAAAAAAAABIEdwAAAAAAAAAAAAAAEgR3AAAAAAAAAAAAAAASBHcAAAAAAAAAAAAAABIEdwAAAAAAAAAAAAAAEgR3AAAAAAAAAAAAAAASBHcAAAAAAAAAAAAAABIEdwAAAAAAAAAAAAAAEgR3AAAAAAAAAAAAAAASBHcAAAAAAAAAAAAAABIEdwAAAAAAAAAAAAAAEgR3AAAAAAAAAAAAAAASBHcAAAAAAAAAAAAAABIEdwAAAAAAAAAAAAAAEgR3AAAAAAAAAAAAAAASBHcAAAAAAAAAAAAAABIEdwAAAAAAAAAAAAAAEgR3AAAAAAAAAAAAAAASBHcAAAAAAAAAAAAAABIEdwAAAAAAAAAAAAAAEgR3AAAAAAAAAAAAAAASBHcAAAAAAAAAAAAAABIEdwAAAAAAAAAAAAAAEgR3AAAAAAAAAAAAAAASBHcAAAAAAAAAAAAAABIEdwAAAAAAAAAAAAAAEgR3AAAAAAAAAAAAAAASBHcAAAAAAAAAAAAAABIEdwAAAAAAAAAAAAAAEgR3AAAAAAAAAAAAAAASBHcAAAAAAAAAAAAAABIEdwAAAAAAAAAAAAAAEgR3AAAAAAAAAAAAAAASBHcAAAAAAAAAAAAAABIEdwAAAAAAAAAAAAAAEgR3AAAAAAAAAAAAAAASBHcAAAAAAAAAAAAAABIEdwAAAAAAAAAAAAAAEgR3AAAAAAAAAAAAAAASBHcAAAAAAAAAAAAAABIEdwAAAAAAAAAAAAAAEgR3AAAAAAAAAAAAAAASBHcAAAAAAAAAAAAAABIEdwAAAAAAAAAAAAAAEgR3AAAAAAAAAAAAAAASBHcAAAAAAAAAAAAAABIEdwAAAAAAAAAAAAAAEgR3AAAAAAAAAAAAAAASBHcAAAAAAAAAAAAAABIEdwAAAAAAAAAAAAAAEgR3AAAAAAAAAAAAAAASBHcAAAAAAAAAAAAAABIEdwAAAAAAAAAAAAAAEgR3AAAAAAAAAAAAAAASBHcAAAAAAAAAAAAAABIEdwAAAAAAAAAAAAAAEgR3AAAAAAAAAAAAAAASBHcAAAAAAAAAAAAAABIEdwAAAAAAAAAAAAAAEgR3AAAAAAAAAAAAAAASBHcAAAAAAAAAAAAAABIEdwAYAAAAAAAAAAAAUCC4AwAAAAAAAAAAAACQILgDAAAAAAAAAAAAAJAguAMAAAAAAAAAAAAAkCC4AwAAAAAAAAAAAACQILgDAAAAAAAAAAAAAJAguAMAAAAAAAAAAAAAkCC4AwAAAAAAAAAAAACQILgDAAAAAAAAAAAAAJAguAMAAAAAAAAAAAAAkCC4AwAAAAAAAAAAAACQILgDAAAAAAAAAAAAAJAguAMAAAAAAAAAAAAAkCC4AwAAAAAAAAAAAACQILgDAAAAAAAAAAAAAJAguAMAAAAAAAAAAAAAkCC4AwAAAAAAAAAAAACQILgDAAAAAAAAAAAAAJAguAMAAAAAAAAAAAAAkCC4AwAAAAAAAAAAAACQILgDAAAAAAAAAAAAAJBwFiL4K9yAUPAAAAAASUVORK5CYII="
+            },
+            "transparency": 0
+          }
+        ]
+      }
+    }
+  }
+}

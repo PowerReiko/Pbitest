@@ -1,0 +1,35 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.6.0/schema.json",
+  "name": "e895d9f0c05a09d1d191",
+  "position": {
+    "x": 0,
+    "y": 0,
+    "z": 12000,
+    "height": 25.129982668977473,
+    "width": 25.129982668977473,
+    "tabOrder": 0
+  },
+  "visual": {
+    "visualType": "image",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "imageUrl": {
+              "expr": {
+                "ResourcePackageItem": {
+                  "PackageName": "RegisteredResources",
+                  "PackageType": 1,
+                  "ItemName": "database-sync-01-Stroke-Rounde7435489165790758.png"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  },
+  "parentGroupName": "b17d9fc0ba0da09d0c06",
+  "howCreated": "InsertVisualButton"
+}

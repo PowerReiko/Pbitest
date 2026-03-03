@@ -1,0 +1,31 @@
+table FutureDate
+	isHidden
+	lineageTag: 36352f11-eaae-4904-9f3f-64b6cff2814b
+
+	column FutureDate
+		dataType: string
+		isHidden
+		lineageTag: 4bb69d9b-f3cd-4296-a0c0-d40b08b9ea04
+		summarizeBy: none
+		sourceColumn: FutureDate
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	partition FutureDate = m
+		mode: import
+		queryGroup: Parameters
+		source =
+				let
+				    Source = DateTime.LocalNow(),
+				    Result = DateTime.ToText(Date.EndOfYear(Date.AddMonths(Source,MonthsForward)),"yyyyMMdd")
+				in
+				    Result
+
+	changedProperty = IsHidden
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Text
+

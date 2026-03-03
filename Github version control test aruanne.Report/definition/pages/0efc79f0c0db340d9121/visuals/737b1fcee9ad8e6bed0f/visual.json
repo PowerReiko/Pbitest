@@ -1,0 +1,306 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.6.0/schema.json",
+  "name": "737b1fcee9ad8e6bed0f",
+  "position": {
+    "x": 0,
+    "y": 0,
+    "z": 0,
+    "height": 434,
+    "width": 650,
+    "tabOrder": 0
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "INFO",
+                    "textStyle": {
+                      "fontWeight": "bold",
+                      "textDecoration": "underline",
+                      "color": "#2e3844"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "• Esmareageerimise aja arvutamisel on välja jäetud nädalavahetused ja riigipühad",
+                    "textStyle": {
+                      "fontSize": "10pt",
+                      "color": "#2e3844"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "• Nende pöördumiste puhul, kus esmareageerimist ei ole tehtud, kuigi töö on loodud ja avatud, arvutatakse reageerimise aeg tänasest kuupäevast - Created On/Loodud",
+                    "textStyle": {
+                      "fontSize": "10pt",
+                      "color": "#2e3844"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "• Välja on jäetud \"",
+                    "textStyle": {
+                      "fontSize": "10pt",
+                      "color": "#2e3844"
+                    }
+                  },
+                  {
+                    "value": "Project",
+                    "textStyle": {
+                      "fontStyle": "italic",
+                      "fontSize": "10pt",
+                      "color": "#2e3844"
+                    }
+                  },
+                  {
+                    "value": "\" ja \"",
+                    "textStyle": {
+                      "fontSize": "10pt",
+                      "color": "#2e3844"
+                    }
+                  },
+                  {
+                    "value": "Idea",
+                    "textStyle": {
+                      "fontStyle": "italic",
+                      "fontSize": "10pt",
+                      "color": "#2e3844"
+                    }
+                  },
+                  {
+                    "value": "\" tüüpi pöördumised",
+                    "textStyle": {
+                      "fontSize": "10pt",
+                      "color": "#2e3844"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Äriline eesmärk: ",
+                    "textStyle": {
+                      "fontWeight": "bold",
+                      "fontSize": "12pt",
+                      "textDecoration": "underline",
+                      "color": "#2e3844"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Ettevõtte strateegiline eesmärk on parandada teenuse kvaliteeti ja kliendirahulolu. Kliendirahuolu on üldises joones seotud reageerimise kiiruse ja töö ärategemise kiirusega.",
+                    "textStyle": {
+                      "fontSize": "10pt",
+                      "color": "#242424"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Selgitused:",
+                    "textStyle": {
+                      "fontWeight": "bold",
+                      "fontSize": "12pt",
+                      "textDecoration": "underline",
+                      "color": "#2e3844"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "• ",
+                    "textStyle": {
+                      "fontSize": "10pt",
+                      "color": "#2e3844"
+                    }
+                  },
+                  {
+                    "value": "Internal/External",
+                    "textStyle": {
+                      "fontWeight": "bold",
+                      "fontSize": "10pt",
+                      "color": "#2e3844"
+                    }
+                  },
+                  {
+                    "value": " = Internal ehk ettevõtte sisesed tööd ning External ehk klienditööd",
+                    "textStyle": {
+                      "fontSize": "10pt",
+                      "color": "#2e3844"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "• ",
+                    "textStyle": {
+                      "fontSize": "10pt",
+                      "color": "#2e3844"
+                    }
+                  },
+                  {
+                    "value": "Created On/Loodud",
+                    "textStyle": {
+                      "fontWeight": "bold",
+                      "fontSize": "10pt",
+                      "color": "#2e3844"
+                    }
+                  },
+                  {
+                    "value": " = Pöördumise loomise kuupäev Service Desk'is",
+                    "textStyle": {
+                      "fontSize": "10pt",
+                      "color": "#2e3844"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "• ",
+                    "textStyle": {
+                      "fontSize": "10pt",
+                      "color": "#2e3844"
+                    }
+                  },
+                  {
+                    "value": "First response/Esmareageerimine",
+                    "textStyle": {
+                      "fontWeight": "bold",
+                      "fontSize": "10pt",
+                      "color": "#2e3844"
+                    }
+                  },
+                  {
+                    "value": " = Kuupäev, millal tehti vastavale pöördumisele esmareageerimine (vastati ",
+                    "textStyle": {
+                      "fontSize": "10pt",
+                      "color": "#2e3844"
+                    }
+                  },
+                  {
+                    "value": "Portal Comment'iga ",
+                    "textStyle": {
+                      "fontStyle": "italic",
+                      "fontSize": "10pt",
+                      "color": "#2e3844"
+                    }
+                  },
+                  {
+                    "value": "või töö määrati lahendatuks/suletuks)",
+                    "textStyle": {
+                      "fontSize": "10pt",
+                      "color": "#2e3844"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "• ",
+                    "textStyle": {
+                      "fontSize": "10pt",
+                      "color": "#2e3844"
+                    }
+                  },
+                  {
+                    "value": "Response time/Reageerimise aeg",
+                    "textStyle": {
+                      "fontWeight": "bold",
+                      "fontSize": "10pt",
+                      "color": "#2e3844"
+                    }
+                  },
+                  {
+                    "value": " = Esmareageerimisele kulunud aeg päevades ja tundides",
+                    "textStyle": {
+                      "fontSize": "10pt",
+                      "color": "#2e3844"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "padding": [
+        {
+          "properties": {
+            "left": {
+              "expr": {
+                "Literal": {
+                  "Value": "15D"
+                }
+              }
+            },
+            "bottom": {
+              "expr": {
+                "Literal": {
+                  "Value": "15D"
+                }
+              }
+            },
+            "top": {
+              "expr": {
+                "Literal": {
+                  "Value": "15D"
+                }
+              }
+            },
+            "right": {
+              "expr": {
+                "Literal": {
+                  "Value": "15D"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

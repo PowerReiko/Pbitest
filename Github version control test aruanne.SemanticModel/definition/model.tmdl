@@ -1,0 +1,47 @@
+model Model
+	culture: en-US
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: et-EE
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+queryGroup Parameters
+
+	annotation PBI_QueryGroupOrder = 2
+
+queryGroup Fact_Data
+
+	annotation PBI_QueryGroupOrder = 0
+
+queryGroup Dim_Data
+
+	annotation PBI_QueryGroupOrder = 1
+
+annotation __PBI_TimeIntelligenceEnabled = 0
+
+annotation PBI_QueryOrder = ["Server_Dataverse","YearsBack","MonthsForward","FromDate","ToDate","FutureDate","Calculations","# incident","Public holidays","≡ account","Last Refresh","Server","Database","≡ col_customerproduct","Väljade kirjeldus"]
+
+annotation __TEdtr = 1
+
+annotation PBI_ProTooling = ["DevMode"]
+
+ref table FromDate
+ref table ToDate
+ref table FutureDate
+ref table Calculations
+ref table Date
+ref table 'Date set'
+ref table '# incident'
+ref table 'Last Refresh'
+ref table 'CRM/Status parameter'
+ref table 'Public holidays'
+ref table '≡ account'
+ref table Info_Columns
+ref table Info_Tables
+ref table '≡ col_customerproduct'
+ref table 'Väljade kirjeldus'
+
+ref cultureInfo en-US
+ref cultureInfo et-EE
+

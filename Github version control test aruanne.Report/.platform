@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "Github version control test aruanne"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "16650682-e610-45a9-933d-c94d7e270cd3"
+  }
+}

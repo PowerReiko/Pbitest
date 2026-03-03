@@ -1,0 +1,50 @@
+/// 'account'[Owner] ja 'incident'[statuscodename] parameetri tabel
+/// 
+table 'CRM/Status parameter'
+	lineageTag: 251a1710-64b5-4eff-a2de-7ae615b164b8
+
+	column Parameter
+		lineageTag: d02da08b-1617-4db1-850a-e0519842dfbf
+		summarizeBy: none
+		sourceColumn: [Value1]
+		sortByColumn: 'Parameter Order'
+
+		relatedColumnDetails
+			groupByColumn: 'Parameter Fields'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Parameter Fields'
+		isHidden
+		lineageTag: 4cba0ce8-02d6-4807-bd08-e42443f76f42
+		summarizeBy: none
+		sourceColumn: [Value2]
+		sortByColumn: 'Parameter Order'
+
+		extendedProperty ParameterMetadata =
+				{
+				  "version": 3,
+				  "kind": 2
+				}
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Parameter Order'
+		isHidden
+		formatString: 0
+		lineageTag: fc71761a-5197-45a6-9b02-dbc7d0ad1d05
+		summarizeBy: sum
+		sourceColumn: [Value3]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'CRM/Status parameter' = calculated
+		mode: import
+		source =
+				{
+				    ("CRM", NAMEOF('≡ account'[Owner]), 0),
+				    ("Status", NAMEOF('# incident'[statuscodename]), 1)
+				}
+
+	annotation PBI_Id = f2cec00f2bed41058c83efcb9032e618
+

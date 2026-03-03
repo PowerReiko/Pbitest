@@ -1,0 +1,31 @@
+table FromDate
+	isHidden
+	lineageTag: 0fdba840-f850-4361-80b3-13db675fa6a2
+
+	column FromDate
+		dataType: string
+		isHidden
+		lineageTag: 90b98708-67c9-4f77-b154-861093aa8bb6
+		summarizeBy: none
+		sourceColumn: FromDate
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	partition FromDate = m
+		mode: import
+		queryGroup: Parameters
+		source =
+				let
+				    Source = Date.AddYears (DateTime.LocalNow(),YearsBack),
+				    #"Aasta algus" = DateTime.ToText(Date.StartOfYear (Source),"yyyyMMdd")
+				in
+				    #"Aasta algus"
+
+	changedProperty = IsHidden
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Text
+

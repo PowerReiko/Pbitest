@@ -1,0 +1,312 @@
+/// Mõõdikute kaust
+table Calculations
+	lineageTag: beddccab-aa39-4ac8-bca8-df4650ad69e1
+
+	measure Blank =
+			
+			BLANK ()
+		formatString: 0
+		displayFolder: #Other
+		lineageTag: e443383f-fdbd-433e-b771-5fa8447ce31e
+
+	measure 'Avg. Response Time (Working Day Hours)' =
+			
+			AVERAGE ( '# incident'[WorkingDayHours] )
+		formatString: 0
+		displayFolder: #Calculations
+		lineageTag: 80e7f362-6d2b-4a33-990c-c2529b9c4f78
+
+	measure Label_Days/Hours =
+			
+			VAR ResponseTime = [Avg. Response Time (Working Day Hours)]
+			VAR Days =
+			    INT ( DIVIDE ( ResponseTime, 24 ) )
+			VAR Hours =
+			    MOD ( INT ( ResponseTime ), 24 )
+			RETURN
+			    IF ( NOT ISBLANK ( ResponseTime ), Days & "d & " & Hours & "h", BLANK () )
+		displayFolder: #Labels_Titles\Labels
+		lineageTag: 5cfeed28-7e68-4e67-87e2-3349441cf73b
+
+	measure 'Count of cases' =
+			
+			COUNTROWS ( '# incident' )
+		formatString: #,0
+		displayFolder: #Calculations
+		lineageTag: 1ae72074-8ce8-41c5-99a6-691dc19bddea
+
+	measure Label_Days/Hours/cases =
+			
+			INT ( [Avg. Response Time (Working Day Hours)] / 24 ) & "d/"
+			    & MOD ( INT ( [Avg. Response Time (Working Day Hours)] ), 24 ) & "h "
+			    & IF (
+			        NOT ( ISBLANK ( [Count of cases] ) ),
+			        "(" & [Count of cases] & " cases)",
+			        BLANK ()
+			    )
+		displayFolder: #Labels_Titles\Labels
+		lineageTag: 3fc438b4-5a5b-4cd9-81a1-87d229179775
+
+	measure 'Count of cases YoY Change' =
+			
+			VAR CurrentYear = [Count of cases]
+			VAR _PreviousYear =
+			    CALCULATE ( [Count of cases], SAMEPERIODLASTYEAR ( 'Date'[Date] ) )
+			RETURN
+			    CurrentYear - _PreviousYear
+		formatString: +# ##0;-# ##0;0
+		displayFolder: #Calculations
+		lineageTag: c28ce2cf-276b-4996-a47a-339e94f36d3e
+
+		annotation PBI_FormatHint = {"isCustom":true}
+
+	measure 'Title_Detail table' =
+			
+			SWITCH (
+			    USERCULTURE (),
+			    "et-EE", "Detail tabel",
+			    "en-US", "Detail table",
+			    "Detail table"
+			)
+		displayFolder: #Labels_Titles\Titles
+		lineageTag: 6c8645ab-baed-437d-b680-4ee1d56579e8
+
+	measure 'Last refresh' =
+			
+			FORMAT ( VALUES ( 'Last Refresh'[Date Last Refreshed] ), "dd.mm.yyyy hh:mm" )
+		displayFolder: #Other
+		lineageTag: 7d41d4af-91ec-4f83-823a-03543e3ec9b1
+
+	measure 'Title_Avg. response time columnchart title' =
+			
+			SWITCH (
+			    USERCULTURE (),
+			    "et-EE", "Avg. esmareageerimise aeg päevades/tundides",
+			    "en-US", "Avg. first response time in days/hours",
+			    "Avg. first response time in days/hours"
+			)
+		displayFolder: #Labels_Titles\Titles
+		lineageTag: 8d0a57df-8f60-42d4-8942-efad3942874b
+
+	measure Title_Report =
+			
+			SWITCH (
+			    USERCULTURE (),
+			    "et-EE", "Esmareageerimine ServiceDesk'is",
+			    "en-US", "First Response in ServiceDesk",
+			    "First Response in ServiceDesk"
+			)
+		displayFolder: #Labels_Titles\Titles
+		lineageTag: 2af5f629-f918-4139-8ab2-e35136289fc9
+
+	measure 'Title_Clear all filters' =
+			
+			SWITCH (
+			    USERCULTURE (),
+			    "et-EE", "Taasta filtri valikud",
+			    "en-US", "Clear all filters",
+			    "Clear all filters"
+			)
+		displayFolder: #Labels_Titles\Titles
+		lineageTag: 2a83f39b-88de-44d9-9f0e-2142e2a394a1
+
+	measure 'Title_Avg. Response time card' =
+			
+			SWITCH (
+			    USERCULTURE (),
+			    "et-EE", "Avg. esmareageerimise aeg",
+			    "en-US", "Avg. response time",
+			    "Avg. response time"
+			)
+		displayFolder: #Labels_Titles\Titles
+		lineageTag: db0b4dd0-2f3a-4e6c-9950-efc4ea2c3cf6
+
+	measure 'Title_count of cases card' =
+			
+			SWITCH (
+			    USERCULTURE (),
+			    "et-EE", "Pöördumiste arv",
+			    "en-US", "Count of cases",
+			    "Count of cases"
+			)
+		displayFolder: #Labels_Titles\Titles
+		lineageTag: 3be67cbe-9b53-4b2a-ab95-99c4d7bdbcc8
+
+	measure Title_Infopanel =
+			
+			SWITCH (
+			    USERCULTURE (),
+			    "et-EE", "Ava infopaneel",
+			    "en-US", "Open infopanel",
+			    "Open infopanel"
+			)
+		displayFolder: #Labels_Titles\Titles
+		lineageTag: 5c3ca20a-735b-4f4c-b6ba-3f81adfcfb5b
+
+	measure Label_Info_text =
+			
+			SWITCH (
+			    USERCULTURE (),
+			    "et-EE",
+			        "• Esmareageerimise aja arvutamisel on välja jäetud nädalavahetused ja riigipühad",
+			    "en-US",
+			        "• Weekends and public holidays are excluded from the first response time calculation",
+			    "• Weekends and public holidays are excluded from the first response time calculation"
+			)
+		displayFolder: #Labels_Titles\Labels
+		lineageTag: d5830546-6c09-4919-8929-54771c8ebfc6
+
+	measure Subtitle_Table =
+			
+			SWITCH (
+			    USERCULTURE (),
+			    "et-EE", "Mitme tulba sortimiseks hoia all 'Shift'",
+			    "en-US", "To sort multiple columns, hold down 'Shift'",
+			    "To sort multiple columns, hold down 'Shift'"
+			)
+		displayFolder: #Labels_Titles\Titles
+		lineageTag: 805cf5dc-58cb-4e97-86cd-1305ca971a30
+
+	measure Target =
+			
+			SWITCH (
+			    USERCULTURE (),
+			    "et-EE", "2 tööpäeva",
+			    "en-US", "2 workdays",
+			    "2 workdays"
+			)
+		displayFolder: #Other
+		lineageTag: 5436a1c4-9bb9-4214-9bd7-90dbc4ac3d27
+
+	measure 'Avg.response time color' =
+			
+			IF ( [Avg. Response Time (Working Day Hours)] >= 48, "#FF6400", "#2E3844" )
+		displayFolder: #Other
+		lineageTag: 35f28f3c-3edb-41e0-8d8d-660a35816aae
+
+	measure 'Only relevant values' =
+			
+			INT ( NOT ISEMPTY ( '# incident' ) )
+		formatString: 0
+		displayFolder: #Other
+		lineageTag: bc352f32-8fe4-429d-895f-2d566f5a1a48
+
+	measure 'Avg.response time color (Columns)' =
+			
+			IF ( [Avg. Response Time (Working Day Hours)] >= 48, "#B0B1B3", "#2E3844" )
+		displayFolder: #Other
+		lineageTag: a25c2d7b-de49-4601-bf1f-46a78c20187a
+
+	measure Icon_Condition =
+			
+			MAXX (
+			    '# incident',
+			    IF (
+			        ( '# incident'[statecodename] = "Active" )
+			            && ISBLANK ( '# incident'[First Response Sent On] )
+			            && [Avg. Response Time (Working Day Hours)] <= 48,
+			        1,
+			        IF ( [Avg. Response Time (Working Day Hours)] <= 48, 2, 3 )
+			    )
+			)
+		formatString: 0
+		displayFolder: #Other
+		lineageTag: 8399e931-e6f0-4528-ba30-ce0a626afda9
+
+	measure '% Response Within 2 Working Days' =
+			
+			VAR TotalResponses =
+			    COUNTROWS ( '# incident' )
+			VAR ResponsesWithin2Days =
+			    CALCULATE (
+			        COUNTROWS ( '# incident' ),
+			        '# incident'[Response in time] = "within 2 working days"
+			    )
+			RETURN
+			    DIVIDE ( ResponsesWithin2Days, TotalResponses, 0 )
+		formatString: 0%;-0%;0%
+		displayFolder: #Calculations
+		lineageTag: d913f7eb-e43d-41cc-884a-293893ed0b84
+
+	measure Count_of_Cases_Description =
+			
+			SWITCH (
+			    USERCULTURE (),
+			    "et-EE", "Pöördumiste arv ServiceDesk'is valitud perioodil",
+			    "en-US", "The count of cases in ServiceDesk during the selected period",
+			    "The count of cases in ServiceDesk during the selected period"
+			)
+		displayFolder: #Labels_Titles\Labels
+		lineageTag: 58aa5207-5b95-4de7-ac0f-ed5252652d48
+
+	measure Target_Description =
+			
+			SWITCH (
+			    USERCULTURE (),
+			    "et-EE", "Seatud eesmärk juhtkonna poolt",
+			    "en-US", "The goal set by the management",
+			    "The goal set by the management"
+			)
+		displayFolder: #Labels_Titles\Labels
+		lineageTag: f4955c82-bf42-4abd-b8bc-65793fabc38b
+
+	measure 'AVG. Respone_Time_Description' =
+			
+			SWITCH (
+			    USERCULTURE (),
+			    "et-EE", "Keskmine esmareageerimise aeg ServiceDesk'i pöördumistele päevades/tundides",
+			    "en-US", "Average first response time in days/hours for ServiceDesk cases",
+			    "Average first response time in days/hours for ServiceDesk cases"
+			)
+		displayFolder: #Labels_Titles\Labels
+		lineageTag: ed69ceab-6896-416d-a83f-4f352fe7a422
+
+	measure 'filter icon' =
+			
+			"data:image/png;base64,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"
+		displayFolder: #Other\Filter Display
+		lineageTag: a425ba9f-4010-450b-9184-5c0f876d903e
+
+	measure 'Number of Filters' =
+			
+			FORMAT (
+			    IF ( ISFILTERED ( '# incident'[Case Type] ), 1 )
+			        + IF ( ISFILTERED ( '# incident'[Warranty] ), 1 )
+			        + IF ( ISFILTERED ( '≡ account'[Internal/External] ), 1 )
+			        + IF ( ISFILTERED ( '≡ col_customerproduct'[Business Line Digital] ), 1 )
+			        + IF ( ISFILTERED ( '# incident'[Response in time] ), 1 )
+			        + IF ( ISFILTERED ( '≡ account'[Account Name] ), 1 )
+			        + IF ( ISFILTERED ( '≡ account'[Owner] ), 1 )
+			        + IF ( ISFILTERED ( '# incident'[statuscodename] ), 1 )
+			        + IF ( ISFILTERED ( '# incident'[Sub Status] ), 1 ),
+			    "#"
+			)
+		displayFolder: #Other\Filter Display
+		lineageTag: 17b59698-ab73-4460-a8c6-8138fdcc926c
+
+	measure 'Is filtered black' =
+			
+			IF ( [Number of Filters] = "", "#FFFFFF00", "#111111" )
+		displayFolder: #Other\Filter Display
+		lineageTag: 172b5299-1c1a-48b5-a024-59799b15a8b0
+
+	measure 'Is filtered Green' =
+			
+			IF ( [Number of Filters] = "", "#FFFFFF00", "#C8FFCE" )
+		displayFolder: #Other\Filter Display
+		lineageTag: 3cd58c47-352e-44f0-abfd-b2ce4a1ea5ac
+
+	partition Calculations = m
+		mode: import
+		source =
+				let
+				    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("i45WMlSKjQUA", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [Column1 = _t]),
+				    #"Changed Type" = Table.TransformColumnTypes(Source,{{"Column1", Int64.Type}}),
+				    #"Removed Columns" = Table.RemoveColumns(#"Changed Type",{"Column1"})
+				in
+				    #"Removed Columns"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

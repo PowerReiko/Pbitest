@@ -1,0 +1,29 @@
+{
+  "version": "2.1.4",
+  "author": {
+    "name": "Columbus Eesti AS",
+    "email": "bieesti@columbusglobal.ee"
+  },
+  "resources": [
+    {
+      "resourceId": "rId0",
+      "sourceType": 5,
+      "file": "resources/newTimelineEBCA53AA6EAF429AA18CF5E2F4E6E3AD.pbiviz.json"
+    }
+  ],
+  "visual": {
+    "guid": "newTimelineEBCA53AA6EAF429AA18CF5E2F4E6E3AD",
+    "name": "newTimeline",
+    "displayName": "Timeline Slicer v2.1.4",
+    "version": "2.1.4",
+    "description": "The purpose of this visual is to easily filter the time dimension",
+    "supportUrl": "test",
+    "gitHubUrl": "",
+    "visualClassName": "TimelineSlicer"
+  },
+  "metadata": {
+    "pbivizjson": {
+      "resourceId": "rId0"
+    }
+  }
+}

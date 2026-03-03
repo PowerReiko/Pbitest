@@ -1,0 +1,167 @@
+table 'Public holidays'
+	isHidden
+	lineageTag: 9a4fc5be-0902-4cb2-84a4-44fe443e0b93
+	dataCategory: Time
+
+	column TRANSDATE
+		dataType: dateTime
+		isHidden
+		isKey
+		formatString: Short Date
+		lineageTag: 663032e5-6b49-4ee4-8c41-167b5684f819
+		summarizeBy: none
+		sourceColumn: TRANSDATE
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column TransDateStr
+		dataType: string
+		isHidden
+		lineageTag: f1a04573-468f-43ba-a7fc-a771cfd82f9e
+		summarizeBy: none
+		sourceColumn: TransDateStr
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column DAY
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 301980ce-2004-45b6-981b-c761bde2b55f
+		summarizeBy: sum
+		sourceColumn: DAY
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column WEEK
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: bb401c9f-5f1e-418b-995d-0d98cf1aec83
+		summarizeBy: sum
+		sourceColumn: WEEK
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column MONTH
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 885eb511-837d-4d00-9710-6c183efd5828
+		summarizeBy: sum
+		sourceColumn: MONTH
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column QUARTER
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: e2856cf9-0209-4a6d-9dc5-7236ba4e0879
+		summarizeBy: sum
+		sourceColumn: QUARTER
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column YEAR
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 4e7ba631-63f0-483f-bab0-b8531422188d
+		summarizeBy: sum
+		sourceColumn: YEAR
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column WEEKDAY
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: d48f1426-49ae-43ec-a5ed-9b9643294d97
+		summarizeBy: sum
+		sourceColumn: WEEKDAY
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column WORKHOURS
+		dataType: double
+		isHidden
+		lineageTag: 269c6d7e-95d4-4f71-91c7-c0074d2325ad
+		summarizeBy: sum
+		sourceColumn: WORKHOURS
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column DAYTYPE
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: e2d9208a-4bd3-4d93-96cc-2345aff6a9f4
+		summarizeBy: sum
+		sourceColumn: DAYTYPE
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column DATAAREAID
+		dataType: string
+		isHidden
+		lineageTag: 7d104440-da1b-4e03-a7bb-29778a959215
+		summarizeBy: none
+		sourceColumn: DATAAREAID
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column DayTypeName
+		dataType: string
+		isHidden
+		lineageTag: 4b9c5651-cc53-473e-bedc-0adfa5f23392
+		summarizeBy: none
+		sourceColumn: DayTypeName
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Public holidays' = m
+		mode: import
+		queryGroup: Dim_Data
+		source =
+				let
+				    Source = Sql.Database(Server, Database),
+				    dbo_Fact_PCLCalendar = Source{[Schema="dbo",Item="Fact_PCLCalendar"]}[Data],
+				    #"Filtered Rows" = Table.SelectRows(dbo_Fact_PCLCalendar, each ([DATAAREAID] = "col")),
+				    #"Added Conditional Column" = Table.AddColumn(#"Filtered Rows", "Custom", each if [DAYTYPE] = 2 then "StateHoliday" else if [DAYTYPE] = 1 then "Weekend" else "Workday"),
+				    #"Renamed Columns" = Table.RenameColumns(#"Added Conditional Column",{{"Custom", "DayTypeName"}})
+				in
+				    #"Renamed Columns"
+
+	changedProperty = IsHidden
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

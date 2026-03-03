@@ -1,0 +1,64 @@
+table '≡ col_customerproduct'
+	lineageTag: aadff870-e56c-4148-8c69-5755b39030f8
+
+	column 'Customer Product'
+		dataType: string
+		isHidden
+		lineageTag: 6fb8fbc5-4b35-44d6-9d3f-60ba60af1c2d
+		summarizeBy: none
+		sourceColumn: col_customerproductid
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column statuscodename
+		dataType: string
+		lineageTag: bf9b0995-71d5-49f5-b8f0-cdc437cf9152
+		summarizeBy: none
+		sourceColumn: statuscodename
+
+		annotation SummarizationSetBy = Automatic
+
+	column Name
+		dataType: string
+		lineageTag: ccfd5c0b-d782-4cbe-8b96-429a2c741445
+		summarizeBy: none
+		sourceColumn: col_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column Account
+		dataType: string
+		isHidden
+		lineageTag: 55057050-8fa1-4531-a3bf-a2cb90e43dc6
+		summarizeBy: none
+		sourceColumn: col_accountname
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Business Line Digital'
+		dataType: string
+		lineageTag: f28bb700-eb84-4451-a047-6c9b636c8ff6
+		summarizeBy: none
+		sourceColumn: oxd_businesslinedigitalname
+
+		annotation SummarizationSetBy = Automatic
+
+	partition '≡ col_customerproduct' = m
+		mode: import
+		queryGroup: Dim_Data
+		source =
+				let
+				    Source = CommonDataService.Database(Server_Dataverse, [CreateNavigationProperties=false]),
+				    dbo_col_customerproduct = Source{[Schema="dbo",Item="col_customerproduct"]}[Data],
+				    #"Removed Other Columns" = Table.SelectColumns(dbo_col_customerproduct,{"col_customerproductid", "statuscodename", "col_name", "col_accountname", "oxd_businesslinedigitalname"})
+				in
+				    #"Removed Other Columns"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

@@ -1,0 +1,269 @@
+/// ServiceDesk'i tööde read (Andmeallikaks Oixio Dataverse andmebaas)
+/// 
+table '# incident'
+	lineageTag: e4be2c03-c728-4aa2-93d6-bc961e66bae0
+
+	/// ServiceDesk'i pöördumise pealkiri
+	column 'Case Title'
+		dataType: string
+		lineageTag: 82e9a36b-732d-4db6-91bd-622610201499
+		summarizeBy: none
+		sourceColumn: title
+
+		annotation SummarizationSetBy = Automatic
+
+	/// ServiceDesk'i pöördumise loomise kuupäev
+	column 'Created On'
+		dataType: dateTime
+		formatString: dd.mm.yyyy hh:nn
+		lineageTag: 79e83ce5-3242-46be-8ca1-49b8a51f95d4
+		summarizeBy: none
+		sourceColumn: createdon
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isDateTimeCustom":true}
+
+	/// Pöördumise ID
+	column 'Case Number'
+		dataType: string
+		lineageTag: a424f8e7-70d8-42e7-9958-ceb7aae80206
+		summarizeBy: none
+		sourceColumn: ticketnumber
+
+		annotation SummarizationSetBy = Automatic
+
+	/// Klient (kes pöördumise tegi)
+	column Customer
+		dataType: string
+		isHidden
+		lineageTag: e4237ca3-db29-4e15-bae6-643c26f77aea
+		summarizeBy: none
+		sourceColumn: customeridname
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	/// Töö omanik
+	column Owner
+		dataType: string
+		lineageTag: b3add291-6050-4c9a-b7d7-ebaff0c893b5
+		summarizeBy: none
+		sourceColumn: owneridname
+
+		annotation SummarizationSetBy = Automatic
+
+	/// Töö olek (aktiivne, suletud, tühistatud)
+	column statecodename
+		dataType: string
+		lineageTag: 41f76132-9f98-49a5-a8ec-66ab29e4c1e4
+		summarizeBy: none
+		sourceColumn: statecodename
+
+		annotation SummarizationSetBy = Automatic
+
+	/// aeg, millal töö omanik saatis välja kommentaari antud töö all
+	column 'First Response Sent On'
+		dataType: dateTime
+		formatString: dd.mm.yyyy hh:nn
+		lineageTag: 41bcdaf6-a67e-4544-89de-e432a476e278
+		summarizeBy: none
+		sourceColumn: oxd_firstresponsesenton
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isDateTimeCustom":true}
+
+	/// Kuupäeva veerg 'Date' dimentsiooni tabeliga ühendamiseks
+	column Date
+		dataType: dateTime
+		isHidden
+		formatString: Long Date
+		lineageTag: 36e925ad-1d9d-40ce-aad3-c21b8b799704
+		summarizeBy: none
+		sourceColumn: Date
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	/// Pöördumise staatus - näitab täpsemat staatust, et mis seisus antud pöördumine on
+	column statuscodename
+		dataType: string
+		lineageTag: 1136f163-7ad6-4a9e-b967-ab1b495aff74
+		summarizeBy: none
+		sourceColumn: statuscodename
+
+		annotation SummarizationSetBy = Automatic
+
+	/// ServiceDesk'i töö sulgemise kuupäev
+	column 'Resolution Date'
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 0b62e036-4aa6-45c0-88bd-178df2c25ce5
+		summarizeBy: none
+		sourceColumn: adx_resolutiondate
+
+		annotation SummarizationSetBy = Automatic
+
+	/// Töö oleku muutmise viimane aeg
+	column 'Modified On'
+		dataType: dateTime
+		formatString: dd.mm.yyyy hh:nn:ss
+		lineageTag: 8f1e3d02-af16-448e-b322-45a2cacdb807
+		summarizeBy: none
+		sourceColumn: modifiedon
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isDateTimeCustom":true}
+
+	/// Tööle reageerimise aeg tundides tööpäeviti (nädalavahetused ja riigipühad arvestatakse välja)
+	column WorkingDayHours =
+			
+			VAR Created = '# incident'[Created On]
+			VAR _Status = '# incident'[statecodename]
+			VAR Resolution = '# incident'[Resolution Date]
+			VAR Modified = '# incident'[Modified On]
+			VAR FirstResponse = '# incident'[First Response Sent On]
+			VAR Response =
+			    IF (
+			        ISBLANK ( FirstResponse ),
+			        SWITCH (
+			            TRUE (),
+			            _Status = "Resolved"
+			                && NOT ISBLANK ( Resolution ), Resolution,
+			            _Status = "Canceled"
+			                && NOT ISBLANK ( Modified ), Modified,
+			            NOW ()
+			        ),
+			        FirstResponse
+			    )
+			VAR DateTimes =
+			    FILTER (
+			        ADDCOLUMNS (
+			            'Date',
+			            "WorkingDayHour",
+			                SWITCH (
+			                    TRUE (),
+			                    'Date'[Date] = DATEVALUE ( Created )
+			                        && 'Date'[Date] = DATEVALUE ( Response ), DATEDIFF ( Created, Response, HOUR ),
+			                    'Date'[Date] = DATEVALUE ( Created ), 24 - HOUR ( Created ),
+			                    'Date'[Date] = DATEVALUE ( Response ), HOUR ( Response ),
+			                    'Date'[Date] > DATEVALUE ( Created )
+			                        && 'Date'[Date] < DATEVALUE ( Response ), 24,
+			                    TRUE (), 0
+			                )
+			        ),
+			        'Date'[Date] >= DATEVALUE ( Created )
+			            && 'Date'[Date] <= DATEVALUE ( Response )
+			            && 'Date'[IsWorkingDay] = TRUE
+			    )
+			RETURN
+			    SUMX ( DateTimes, [WorkingDayHour] )
+		formatString: 0
+		lineageTag: 8026db41-9e7b-4987-ada2-94a4fc2234a2
+		summarizeBy: sum
+
+		annotation SummarizationSetBy = Automatic
+
+	/// Kliendi ID
+	column customerid
+		dataType: string
+		isHidden
+		lineageTag: 04c4a867-c046-4261-9dee-9c82d3736bb5
+		summarizeBy: none
+		sourceColumn: customerid
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	/// Pöördumise Sub-Staatus
+	column 'Sub Status'
+		dataType: string
+		lineageTag: e58a1827-a2d9-4fbc-9827-af45252d445d
+		summarizeBy: none
+		sourceColumn: col_substatusname
+
+		annotation SummarizationSetBy = Automatic
+
+	/// Esmase reageerimine kuupäev/kellaaeg
+	column 'First Response'
+		dataType: dateTime
+		formatString: dd.mm.yyyy hh:nn
+		lineageTag: deac1195-5c0e-4c19-aa4c-499364971254
+		summarizeBy: none
+		sourceColumn: First Response
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isDateTimeCustom":true}
+
+	/// Tööde grupeeringu veerg, kus määratakse ära, kas tööle on reageeritud all 48 tunni jooksul või üle
+	column 'Response in time' =
+			IF (
+			    '# incident'[WorkingDayHours] <= 48,
+			    "within 2 working days",
+			    "later than within 2 working days"
+			)
+		lineageTag: b992dc2c-2ebc-4482-bcf7-4b1ec3341b65
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column col_customerproduct
+		dataType: string
+		isHidden
+		lineageTag: 20714802-66c5-467f-be94-84942178ad38
+		summarizeBy: none
+		sourceColumn: col_customerproduct
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	/// ServiceDesk'i pöördumise liik: Request ehk tavapöördumine; P1 ehk kriitiline
+	column 'Case Type'
+		dataType: string
+		lineageTag: a8a74c16-1f7f-477a-b2e5-3751332156db
+		summarizeBy: none
+		sourceColumn: casetypecodename
+
+		annotation SummarizationSetBy = Automatic
+
+	/// Kas tegemist on garantii tööga või mitte
+	column Warranty
+		dataType: string
+		lineageTag: 47cbfbf0-eefc-4d71-9447-8b0d4a0d3456
+		summarizeBy: none
+		sourceColumn: col_warrantyname
+
+		annotation SummarizationSetBy = Automatic
+
+	partition '# incident' = m
+		mode: import
+		queryGroup: Fact_Data
+		source =
+				let
+				    Source = CommonDataService.Database(Server_Dataverse, [CreateNavigationProperties=false]),
+				    dbo_incident = Source{[Schema="dbo",Item="incident"]}[Data],
+				    #"Removed Other Columns" = Table.SelectColumns(dbo_incident,{"title", "createdon", "ticketnumber", "modifiedon", "customerid", "customeridname", "owneridname", "statecodename", "casetypecodename", "statuscodename", "adx_resolutiondate", "col_customerproduct", "col_substatusname", "col_warrantyname", "oxd_firstresponsesenton"}),
+				    #"Inserted Date" = Table.AddColumn(#"Removed Other Columns", "Date", each DateTime.Date([createdon]), type date),
+				    #"Date FILTER" = Table.SelectRows(#"Inserted Date", each [Date] > #date(2024, 12, 31)),
+				    #"Case Type FILTER" = Table.SelectRows(#"Date FILTER", each ([casetypecodename] = "P1 issue" or [casetypecodename] = "Request")),
+				    #"""First Response"" date column add" = Table.AddColumn(#"Case Type FILTER", "First Response", each if [oxd_firstresponsesenton] <> null then [oxd_firstresponsesenton]
+				else if [adx_resolutiondate] <> null then [adx_resolutiondate]
+				else if [oxd_firstresponsesenton] = null and [adx_resolutiondate] = null and [statecodename] = "Canceled" then [modifiedon]
+				else null),
+				    #"Changed Type" = Table.TransformColumnTypes(#"""First Response"" date column add",{{"First Response", type datetime}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

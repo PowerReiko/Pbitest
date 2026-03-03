@@ -1,0 +1,51 @@
+/// Perioodilisuse parameeter
+/// 
+table 'Date set'
+	lineageTag: e0a3b2f6-6e09-436b-8d0e-84dfdc52000a
+
+	column 'Date set'
+		lineageTag: 86fdd251-5aed-4317-9aba-43a47eb254bd
+		summarizeBy: none
+		sourceColumn: [Value1]
+		sortByColumn: 'Date set Order'
+
+		relatedColumnDetails
+			groupByColumn: 'Date set Fields'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Date set Fields'
+		isHidden
+		lineageTag: 29d3d27a-65cf-4e6a-843e-1f5f93a3ea36
+		summarizeBy: none
+		sourceColumn: [Value2]
+		sortByColumn: 'Date set Order'
+
+		extendedProperty ParameterMetadata =
+				{
+				  "version": 3,
+				  "kind": 2
+				}
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Date set Order'
+		isHidden
+		formatString: 0
+		lineageTag: 17ceacc9-be9f-4cd4-9013-9a8b3cc93b48
+		summarizeBy: sum
+		sourceColumn: [Value3]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Date set' = calculated
+		mode: import
+		source =
+				{
+				    ("Month", NAMEOF('Date'[Month]), 0),
+				    ("Quarter", NAMEOF('Date'[Quarter]), 1),
+				    ("Year", NAMEOF('Date'[Year]), 2)
+				}
+
+	annotation PBI_Id = 1513922de239493bb77d429d79b76c7c
+

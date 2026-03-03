@@ -1,0 +1,16 @@
+relationship b6e1a2a5-3400-6a0d-beab-3a4d0c4e3387
+	fromColumn: '# incident'.Date
+	toColumn: Date.Date
+
+relationship a345c4c2-25c0-9773-0a1e-0e50d941f252
+	fromColumn: '# incident'.customerid
+	toColumn: '≡ account'.Account
+
+relationship 51cdd485-5263-6338-fe46-961052611984
+	fromColumn: Info_Columns.Table
+	toColumn: Info_Tables.Name
+
+relationship 64b77654-69e8-a7e3-2040-caadd8b892ea
+	fromColumn: '# incident'.col_customerproduct
+	toColumn: '≡ col_customerproduct'.'Customer Product'
+
